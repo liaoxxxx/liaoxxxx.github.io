@@ -1,0 +1,6 @@
+.vue_icon{
+    background-image: url("../img/vuejs.png");
+    height: 50px;
+    width: 50px;
+    display: block;
+}
