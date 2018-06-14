@@ -1,0 +1,9 @@
+.php_icon{
+    background-image: url("../img/php_log.png");
+    height: 50px;
+    width: 50px;
+
+
+    background-size: cover;
+    display: block;
+}
