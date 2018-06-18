@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>mysql的简单操作</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <script src="../js/jQuery%20v3.3.1min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/main.css">
+    <title>连接mysql,oop/opp</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jQuery%20v3.3.1min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -29,15 +29,6 @@
                 <li><a href="#">Link</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../vue_js.html">vue.js</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
                 </li>
             </ul>
             <form class="navbar-form navbar-left">
@@ -64,48 +55,69 @@
 </nav>
 <div class="container">
     <div class="content">
+        <div>
+            <h1>
+                关于两种连接mysql的方式,面向对象/面向过程;
+            </h1>
+            <p >
+                茴香豆的茴字的N种写法.
+            </p>
+        </div>
+        <hr>
         <ul>
+
             <li>
                 <h3>
-                    浏览table(表单)
-
+                    面向对象的方式连接mysql数据库.
                 </h3>
-                <h5>
-                    select * frome table(表单的名字)
-                </h5>
+                <pre>
+
+                    $conn=new mysqli("localhost","root","root");    //建立连接;
+
+                    $conn->select_db("my_db");                        //选择database;
+
+                    $result = $conn->query('SELECT * FROM user');   //查询数据,返回结果;
+
+                    $result_arr=$result->fetch_array();             //获得返回结果的记录;
+
+                    print_r($result_arr);                             //输出 $result_arr;
+
+                    $result->free_result();                           //释放 查询结果 所占用的运行内存;
+
+                    $conn->close();                                    //关闭连接进程;
+
+                </pre>
+
                 <hr>
             </li>
             <li>
                 <h3>
-                    create table table_name(表单的名字)  &nbsp;&nbsp;&nbsp; //创建表单
+                    面向过程的方式连接mysql数据库.
                 </h3>
                 <pre>
-                    create table table_name(Field  Type  Unsigned  Null  Extra  Key  Default  comment"info" ,)
+
+                     //建立连接;
+                    $conn=mysqli_connect("localhost","root","root");
+
+                    //选择database;
+                    mysqli_select_db($conn,"my_db");
+
+                    //查询数据,返回结果;
+                    mysqli_query($conn,'select * from user');
+
+                    //获得返回结果的记录;
+                    $fetch_arr= mysqli_fetch_array($result);
+
+                    //输出 $result_arr;
+                    print_r($fetch_arr);
+
+                    //释放 查询结果 所占用的运行内存;
+                    mysqli_free_result($result);
+
+                    //关闭连接进程;
+                    mysqli_close($conn);
+
                 </pre>
-                <p>
-                    1.Field 为字段,必填,重要;
-                </p>
-                <p>
-                    2.Type 定义字段类型,括号内填入定义该字段长度,必填;
-                </p>
-                <p>
-                    3.Unsigned 定义字段是否为有符号(负数),选填;
-                </p>
-                <p>
-                    4.Null 定义字段是否为空,可选,如 not null;
-                </p>
-                <p>
-                    5.Extra(A_I) ,即auto_increment,和主键配合使用,给主键设置自动增值;
-                </p>
-                <p>
-                    6.Key 设置主键(primary key),在主键中书写,其他字段不能使用;
-                </p>
-                <p>
-                    7.Default 设置字段默认值,选填,输入的文本即为默认值;
-                </p>
-                <p>
-                    8.comment"备注信息",给该字段添加备注信息;
-                </p>
                 <hr>
             </li>
 
