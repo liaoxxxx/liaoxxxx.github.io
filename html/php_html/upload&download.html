@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>header()</title>
+    <title>上传和下载</title>
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <script src="../../js/jQuery%20v3.3.1min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
@@ -58,33 +58,87 @@
     <div class="content">
         <div>
             <h1>
-              header() 函数的使用
+               上传(upload)/下载(download)
             </h1>
             <p >
-                还是茴香豆的茴字的N种写法.
+
             </p>
         </div>
         <hr>
         <ul>
-
             <li>
                 <h3>
-                    header("Content-Type:text/html; charset=utf-8");
+                    上传
                 </h3>
                 <pre>
-设置页面内容是html编码格式是utf-8；
+	/**
+	 * Created by PhpStorm.
+	 * User: Administrator
+	 * Date: 2018/6/27
+	 * Time: 20:36
+	 */
+
+	/**
+	 * @param $uploadTagName                                                                    /上传的标签的名字
+	 * @param $pathName                                                                         /保存路径
+	 * @return bool|string                                                                      true/返回路径+文件名 || false
+	 */
+	function uploadFiles($uploadTagName,$pathName)
+	{
+		if (!$_FILES[$uploadTagName]['error'])                                                   //判断是否上传成功；
+		{
+
+			$type=$_FILES['files']['type'];
+			$index=strripos($type,'/');
+
+			$type=substr($type,$index+1);                                                        //获得文件类型;
+
+			if(0)                                                                               // $type
+			{
+				                       // todo  这里写判断是否允许上传该文件的 类型；
+			}
+
+			if (!file_exists($pathName))                                                        //判断路径是否不存在;
+			{
+				mkdir($pathName);                                                               //不存在该路径则创建该路径;
+			}
+
+			$fileName=md5(date("Y-m-d-H:i:s").mt_rand(10000,99999));                            //mt_rand()为避免文件重名
+
+			copy($_FILES[$uploadTagName]['tmp_name'],$pathName.'/'.$fileName.'.'.$type);        //移动该文件;
+
+			echo "上传成功";
+			return  $pathName.'/'.$fileName.'.'.$type;
+		}
+		else
+		{
+
+			echo "'上传失败'";
+                return false;
+              }
+     }
+
                 </pre>
                 <hr>
             </li>
+
             <li>
                 <h3>
-                    header("refresh:2;index.php?m=admin&c=news&a=index");
+                    下载
                 </h3>
                 <pre>
-$id=$_GET['id'];
-mysqli_delete($connect,"news",$_GET['id']);
-echo "删除成功";
-header("refresh:2;index.php?m=admin&c=news&a=index");
+    function download($files)
+    {
+	    $files="upload/image/2018-06-27/00.jpg";                                         //路径；
+	    $index=strripos($files,"/");
+	    $fileName=substr($files,$index+1);                                              //获得文件名；
+	    $size=filesize($files);                                                         //获取文件大小；
+	    header("Content-type:application/octet-stream");
+	    header("Content-Disposition:attachment;filename='$fileName' ");                  //给下载的文件命名；
+	    header("Content-Length:{$size}");                                               //注明文件尺寸；
+	    header("Content-Transfer-Encoding:binary");
+	    readfile($files);
+    }
                 </pre>
                 <hr>
             </li>
