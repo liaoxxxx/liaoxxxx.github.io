@@ -71,53 +71,51 @@
                     上传
                 </h3>
                 <pre>
-	/**
-	 * Created by PhpStorm.
-	 * User: Administrator
-	 * Date: 2018/6/27
-	 * Time: 20:36
-	 */
-
-	/**
-	 * @param $uploadTagName                                                                    /上传的标签的名字
-	 * @param $pathName                                                                         /保存路径
-	 * @return bool|string                                                                      true/返回路径+文件名 || false
-	 */
-	function uploadFiles($uploadTagName,$pathName)
-	{
-		if (!$_FILES[$uploadTagName]['error'])                                                   //判断是否上传成功；
-		{
-
-			$type=$_FILES['files']['type'];
-			$index=strripos($type,'/');
-
-			$type=substr($type,$index+1);                                                        //获得文件类型;
-
-			if(0)                                                                               // $type
-			{
-				                       // todo  这里写判断是否允许上传该文件的 类型；
-			}
-
-			if (!file_exists($pathName))                                                        //判断路径是否不存在;
-			{
-				mkdir($pathName);                                                               //不存在该路径则创建该路径;
-			}
-
-			$fileName=md5(date("Y-m-d-H:i:s").mt_rand(10000,99999));                            //mt_rand()为避免文件重名
-
-			copy($_FILES[$uploadTagName]['tmp_name'],$pathName.'/'.$fileName.'.'.$type);        //移动该文件;
-
-			echo "上传成功";
-			return  $pathName.'/'.$fileName.'.'.$type;
-		}
-		else
-		{
-
-			echo "'上传失败'";
-                return false;
-              }
-     }
-
+                    <xmp>function uploadFileLot($tagName,$regex,$path)
+{
+    //new array(); 用于返回图片路径
+    $pathArray=array();
+    $time=time();
+    $path.=date("Y-m-d",$time);
+    //判断路径是否不存在;
+    if (!file_exists($path))
+    {
+        //不存在该路径则创建该路径;
+        mkdir($path);
+    }
+    //获得文件数量
+    $filesCount=count($_FILES[$tagName]['name']);
+    for ($i=0;$i<$filesCount;$i++)
+    {
+        //返回的 例如 image/jpeg,即jpeg文件;
+        $type= $_FILES[$tagName]['type'][$i];
+        $result= preg_match($regex,$type);
+        //验证文件格式
+        if (!$result)
+        {
+            echo'<script>alert( "文件格式不支持")</script>';
+            die;
+        }
+        //把文件类型修剪为 例如 image/jpeg 获得jpeg;
+        $type=substr($type,strripos($type,'/')+1);
+        //mt_rand()为避免文件重名
+        $fileName=md5(mt_rand(1000,9999).mt_rand(10000,99999));
+        //移动该文件;
+        $copyRe= copy($_FILES[$tagName]['tmp_name'][$i],$path.'/'.$fileName.'.'.$type);
+        if ($copyRe)
+        {
+            $pathArray[$i]= $path.'/'.$fileName.'.'.$type;
+        }
+        else
+        {
+            echo'<script>alert("copy2pathFailed")</script>';
+            die();
+        }
+    }
+    echo'<script>alert("文件上传成功")</script>';
+    return $pathArray;
+}
+                     </xmp>
                 </pre>
                 <hr>
             </li>
@@ -127,9 +125,9 @@
                     下载
                 </h3>
                 <pre>
+//路径； $files="upload/image/2018-06-27/00.jpg";
     function download($files)
     {
-	    $files="upload/image/2018-06-27/00.jpg";                                         //路径；
 	    $index=strripos($files,"/");
 	    $fileName=substr($files,$index+1);                                              //获得文件名；
 	    $size=filesize($files);                                                         //获取文件大小；
@@ -142,12 +140,8 @@
                 </pre>
                 <hr>
             </li>
-
-
         </ul>
-
     </div>
-
 </div>
 </body>
 </html>
