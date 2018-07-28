@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title>tp5.1</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jQuery v3.3.1min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/vue_js.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all_php_style.css">
+
 </head>
 <body>
-
 <div class="container">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -20,28 +23,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">liaoxx</a>
+                <a href=""><span class="php_icon"></span></a>
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="">首页 <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="vue_js.html">vue.js</a></li>
-                            <li><a href="all_php.html">Php</a></li>
-                            <li><a href="all_mysql.html">mySql</a></li>
-                            <li><a href="all_uwp.html">UWP</a></li>
-                            <li><a href="all_js.html">js</a></li>
-                            <li><a href="all_js.html">bootstrap</a></li>
-                            <li><a href="all_tp5.html">Thinkphp5.1</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="index.html">返回首页</a></li>
                 </ul>
                 <form class="navbar-form navbar-left">
                     <div class="form-group">
@@ -65,10 +54,20 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    <div class="jumbotron">
-        <h1>null</h1>
-        <p>empty</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>
+
+    <div class="content">
+        <ul>
+            <li>
+                <h2 class=""><a href="#. ">数据库模型</a></h2>
+                <h6>Model类提供了一些基础的数据库操作方法，当需要进行复杂的数据库操作时，
+                    就需要使用自定义模型了。自定义模型能够实现更加灵活和强大的数据库操作，
+                    特别是能够针对项目一些特殊的功能定制数据库操作方案，例如数据检验、数据缓存、
+                    数据加工等。使用自定义模型，通常情况下也是需要与数据库的真是表明进行映射，
+                    这是MVC的一条规范，否则模型就与普通的功能类无异，在调用时，系统提供了D函数，
+                    用于快速实例化自定义模型。</h6>
+                <hr>
+            </li>
+        </ul>
     </div>
 </div>
 </body>
