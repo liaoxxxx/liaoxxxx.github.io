@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -144,4 +145,152 @@
     </div>
 </div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传和下载</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jQuery%20v3.3.1min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">liaoxx</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="来探索吧">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">关于</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">乱写的 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="content">
+        <div>
+            <h1>
+               上传(upload)/下载(download)
+            </h1>
+            <p >
+
+            </p>
+        </div>
+        <hr>
+        <ul>
+            <li>
+                <h3>
+                    上传
+                </h3>
+                <pre>
+                    <xmp>function uploadFileLot($tagName,$regex,$path)
+{
+    //new array(); 用于返回图片路径
+    $pathArray=array();
+    $time=time();
+    $path.=date("Y-m-d",$time);
+    //判断路径是否不存在;
+    if (!file_exists($path))
+    {
+        //不存在该路径则创建该路径;
+        mkdir($path);
+    }
+    //获得文件数量
+    $filesCount=count($_FILES[$tagName]['name']);
+    for ($i=0;$i<$filesCount;$i++)
+    {
+        //返回的 例如 image/jpeg,即jpeg文件;
+        $type= $_FILES[$tagName]['type'][$i];
+        $result= preg_match($regex,$type);
+        //验证文件格式
+        if (!$result)
+        {
+            echo'<script>alert( "文件格式不支持")</script>';
+            die;
+        }
+        //把文件类型修剪为 例如 image/jpeg 获得jpeg;
+        $type=substr($type,strripos($type,'/')+1);
+        //mt_rand()为避免文件重名
+        $fileName=md5(mt_rand(1000,9999).mt_rand(10000,99999));
+        //移动该文件;
+        $copyRe= copy($_FILES[$tagName]['tmp_name'][$i],$path.'/'.$fileName.'.'.$type);
+        if ($copyRe)
+        {
+            $pathArray[$i]= $path.'/'.$fileName.'.'.$type;
+        }
+        else
+        {
+            echo'<script>alert("copy2pathFailed")</script>';
+            die();
+        }
+    }
+    echo'<script>alert("文件上传成功")</script>';
+    return $pathArray;
+}
+                     </xmp>
+                </pre>
+                <hr>
+            </li>
+
+            <li>
+                <h3>
+                    下载
+                </h3>
+                <pre>
+//路径； $files="upload/image/2018-06-27/00.jpg";
+    function download($files)
+    {
+	    $index=strripos($files,"/");
+	    $fileName=substr($files,$index+1);                                              //获得文件名；
+	    $size=filesize($files);                                                         //获取文件大小；
+	    header("Content-type:application/octet-stream");
+	    header("Content-Disposition:attachment;filename='$fileName' ");                  //给下载的文件命名；
+	    header("Content-Length:{$size}");                                               //注明文件尺寸；
+	    header("Content-Transfer-Encoding:binary");
+	    readfile($files);
+    }
+                </pre>
+                <hr>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+>>>>>>> 208d9f84ae4fe1b82e0dff0f378fcf09f29056ce
 </html>

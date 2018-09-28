@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -133,4 +134,141 @@ layer 采用 MIT 开源许可证，将会永久性提供无偿服务。因着数
     </div>
 </div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于layer.js</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../js/jQuery v3.3.1min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">liaoxx</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">更多 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../vue_js.html">vue.js</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="来探索吧">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">关于</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">乱写的 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="content">
+        <h1>layer.js</h1>
+        <ul>
+            <li>
+                <h3>
+                    <a href="http://layer.layui.com/">layer官网</a>
+                </h3>
+                <p>
+layer是一款近年来备受青睐的web弹层组件，她具备全方位的解决方案，致力于服务各水平段的开发人员，您的页面会轻松地拥
+                    有丰富友好的操作体验。
+                </p>
+                <p>
+在与同类组件的比较中，layer总是能轻易获胜。她尽可能地在以更少的代码展现更强健的功能，且格外注重性能的提升、易用和
+                    实用性，正因如此，越来越多的开发者将媚眼投上了layer（已被7220417人次关注）。layer 甚至兼容了包
+                    括 IE6 在内的所有主流浏览器。她数量可观的接口，使得您可以自定义太多您需要的风格，每一种弹层模式
+                    各具特色，广受欢迎。当然，这种“王婆卖瓜”的陈述听起来总是有点难受，因此你需要进一步了解她是否真
+                    的如你所愿。
+                </p>
+                 <p>
+layer 采用 MIT 开源许可证，将会永久性提供无偿服务。因着数年的坚持维护，截至到2017年9月13日，已运用在超过 30万 家
+                     Web 平台，其中不乏众多知名大型网站。目前 layer 已经成为国内乃至全世界最多人使用的 Web 弹层解决
+                     方案，并且她仍在与 Layui 一并高速发展。Fly
+                </p>
+                <p style="text-align: right">
+                    摘自layer官网
+                </p>
+                <hr>
+            </li>
+            <li>
+                <h1 style="text-align:center;">$(obj)</h1>
+                <xmp>
+                    <a style="text-decoration:none" class="ml-5"  goods_detail_id="{:$vo.id}" onclick="product_del(this,'10001')" href="javascript:;" title="删除">
+                        <i class="Hui-iconfont"></i>
+                    </a>
+                </xmp>
+                <xmp>
+                    function product_del(obj,id)
+                    {
+                        var id=$(obj).attr('goods_detail_id');
+                        layer.confirm('确认要删除吗？',function(index)
+                        {
+                            $.ajax(
+                            {
+                                type: 'POST',
+                                url: 'admin/product/delete',
+                                dataType: 'json',
+                                success: function(data)
+                                {
+                                    $(obj).parents("tr").remove();
+                                    layer.msg('已删除!',{icon:1,time:1000});
+                                },
+                                error:function(data)
+                                {
+                                    console.log(data.msg);
+                                },
+                            });
+                        });
+                    }
+                </xmp>
+                <p>
+                    其中function product_del(obj,id){  var id= <span class="red" style="color: red;">$(obj)</span>
+                    .attr('goods_detail_id');} 的<span style="color: red;">$(obj)</span>即是获取触发该方法的element(元素对象)&nbsp;&nbsp;&nbsp; a标签
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+>>>>>>> 208d9f84ae4fe1b82e0dff0f378fcf09f29056ce
 </html>
