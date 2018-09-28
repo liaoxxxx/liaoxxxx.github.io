@@ -90,7 +90,7 @@
     <div class="content">
         <ul>
             <li>
-                <h2> toolBar的配置范例</h2>
+                <h2> toolBar的配置范例及注意事项</h2>
                 <xmp>
 "tabBar":{
     "list":[
@@ -114,8 +114,15 @@
         },
         {
           "text": "我的",
-          "pagePath": "pages/user/index",
+          "pagePath": "pages/user/index",   <-------------已经注册到toolBar
+
           //地址被注册无法跳转解决方案  <navigator url='/pages/user/index' open-type='switchTab'>用户中心</navigator>    注：open-type='switchTab'
+          //如果使用 navigateTo / redirectTo  等也无法跳转到已经被注册的页面
+          wx.navigateTo(
+          {
+              url: '/pages/user/index'     <-------------例如
+          })
+
           "iconPath": "src/images/toolBar/myself.png",
           "selectedIconPath": "src/images/toolBar/myself-select.png"
         }
