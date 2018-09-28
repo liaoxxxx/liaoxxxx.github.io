@@ -56,11 +56,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="option_of_toolBar.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="option_of_toolBar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/wxMIniProgram/option_of_toolBar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="940">
-              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+            <state relative-caret-position="342">
+              <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="641">
+              <caret line="216" column="9" selection-start-line="216" selection-start-column="9" selection-end-line="216" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -125,9 +139,9 @@
         <option value="$PROJECT_DIR$/about_vue_js.html" />
         <option value="$PROJECT_DIR$/all_php.html" />
         <option value="$PROJECT_DIR$/html/php_html/CURL.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/all_wxMiniProgram.html" />
         <option value="$PROJECT_DIR$/html/wxMIniProgram/option_of_toolBar.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -146,7 +160,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="720" />
     <option name="width" value="720" />
     <option name="height" value="900" />
@@ -168,17 +182,6 @@
               <item name="liaoxxxx.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="liaoxxxx.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="liaoxxxx.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="liaoxxxx.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="liaoxxxx.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="liaoxxxx.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="wxMIniProgram" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,12 +284,12 @@
       <workItem from="1536841835060" duration="1060000" />
       <workItem from="1536852969795" duration="1270000" />
       <workItem from="1537884701969" duration="5693000" />
-      <workItem from="1538141727619" duration="492000" />
+      <workItem from="1538141727619" duration="1220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99066000" />
+    <option name="totallyTimeSpent" value="99794000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -630,10 +633,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/html/wxMIniProgram/option_of_toolBar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1565">
-          <caret line="200" column="17" lean-forward="true" selection-start-line="200" selection-start-column="17" selection-end-line="200" selection-end-column="17" />
+        <state relative-caret-position="342">
+          <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -642,10 +645,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/wxMIniProgram/option_of_toolBar.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="940">
-          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+        <state relative-caret-position="641">
+          <caret line="216" column="9" selection-start-line="216" selection-start-column="9" selection-end-line="216" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
