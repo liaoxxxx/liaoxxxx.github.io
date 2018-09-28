@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StdClass</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jQuery%20v3.3.1min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">liaoxx</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="来探索吧">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">关于</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">乱写的 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="content">
+        <div>
+            <h1>
+               关于StdClass
+            </h1>
+            <p >
+                20180903
+            </p>
+        </div>
+        <hr>
+        <ul>
+            <li>
+                <h3>
+                   介绍
+                </h3>
+                <h4>
+                    <p>
+                        stdclass在php中是预定义的几个类之一，是zent保留的一个类。
+                        实际上它是PHP提供的一个基类,就是一个空白的类，
+                        里面什么都没有，我们可以实例化它，然后定义一系列的变量，
+                        通过它来进行变量的传递（很多php程序员用它来传递一系列变量的值，
+                        而同时又懒得去创建一个自己的类）。但是，由于实例化后不能添加方法，只能传递属性。
+                        因为，一旦类被实列化以后，就不能在添加方法了。
+                        stdclass可以作为基类使用，其最大特点是，（其派生类）可以自动添加成员变量，而无须在定义时说明。
+                        一切php变量都是stdClass的实例。<a href="https://www.jb51.net/article/61484.htm">转自脚本之家</a>
+                    </p>
+                </h4>
+                <hr>
+            </li>
+            <li>
+                <h3>
+                    实例(真的是意外);
+                </h3>
+                <pre>
+                                 <xmp>
+                         //立即购买
+         $('#addpay').click(function ()
+         {
+             //获取值
+             var goods_id=$("#goodsId").attr('goodsId');
+             var goods_detail_id=$("#goodsDetailId").val();
+             var goods_num=$("#goodsNum").val();
+             var last_page=window.location.href;
+            // 一维数组
+             var arr = new Array();
+             // 二维对象（数组）
+             var brr ={
+                 "goods_id":goods_id,
+                 "goods_detail_id":goods_detail_id,
+                 "goods_num":goods_num
+             };
+             arr.push(brr);
+             //json编码
+             arr=JSON.stringify(arr);
+             $.post
+             (
+                 "{:url('/index/pay/direct2pay')}",
+                {
+                   buy_now:arr,
+                },
+                 function(result)
+                 {
+                     //todo
+                 }
+             );
+             return false;
+                    </xmp>
+                </pre>
+                <pre>
+                <xmp>
+                    if (!empty(json_decode(input('post.buy_now'))))
+                    {
+                        $buy_now= json_decode(input('post.buy_now'));
+                        $goods_id=$buy_now[0]->goods_id;
+                        $goods_detail_id=$buy_now[0]->goods_detail_id;
+                        $goods_num=$buy_now[0]->goods_num;
+                        session('buy_now',[[$goods_id,$goods_detail_id,$goods_num]]);
+                    }
+                </xmp>
+                </pre>
+                <pre>
+
+使用方法：
+
+1、使用stdclass：
+
+$andy = object->member(成员属性);
+
+其实就是类的属性成员的访问 $this->member
+                </pre>
+                <hr>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax实例</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jQuery%20v3.3.1min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">liaoxx</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="来探索吧">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">关于</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">乱写的 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="content">
+        <div>
+            <h1>
+               关于Ajax
+            </h1>
+            <pre>
+ajax （Ajax 开发） 编辑
+Ajax 即“Asynchronous Javascript And XML”（异步 JavaScript 和 XML），是指一种创建交互式网页应用的网页开发技术。
+Ajax = 异步 JavaScript 和 XML（标准通用标记语言的子集）。
+Ajax 是一种用于创建快速动态网页的技术。
+Ajax 是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。 [1]
+通过在后台与服务器进行少量数据交换，Ajax 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。
+传统的网页（不使用 Ajax）如果需要更新内容，必须重载整个网页页面。
+摘抄自 <a href="https://baike.baidu.com/item/ajax/8425?fr=aladdin">百度百科 Ajax</a>
+            </pre>
+        </div>
+        <hr>
+        <ul>
+
+            <li>
+                <h3>
+                    Ajax _post方式
+                </h3>
+
+                <p style="font-size: 20px">PHP 文件(test00.php)</p>
+                <pre><xmp><?php
+/**
+ * Created by PhpStorm.
+ * User: 11828
+ * Date: 2018/7/8
+ * Time: 22:55
+ */
+if (!empty($_POST))
+{
+    echo $_POST['name']."-----|-----".$_POST['city'];
+    die();
+}
+include("AJAX_example.html");
+</xmp></pre>
+                <hr>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+</body>
+</html>

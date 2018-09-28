@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据库事务</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jQuery%20v3.3.1min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">liaoxx</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="../../index.html">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../vue_js.html">vue.js</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="来探索吧">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">关于</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">乱写的 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="content">
+        <ul>
+            <li>
+                <h3>
+                    事务是一个最小的工作单元，不论成功与否都作为一个整体进行工作。
+                </h3>
+                <h5>
+                    <p>不会有部分完成的事务。由于事务是由几个任务组成的，因此如果一个事务作为一个整体是成功的，
+                        则事务中的每个任务都必须成功。如果事务中有一部分失败，则整个事务失败。</p>
+                    <p> 当事务失败时，系统返回到事务开始时的状态。这个取消所有变化的过程称为“回滚”( rollback )。
+                        例如，如果一个事务成功更新了两个表，在更新第三个表时失败，则系统将两次更新恢复原状，
+                        并返回到原始的状态。
+                    </p>
+                </h5>
+                <hr>
+            </li>
+            <li>
+                <h3>
+                    使用场景.
+
+                </h3>
+                <h5>
+                    <p>如商品订单生成操作时加锁,隔离其他的事物操作,避免脏读 ,保证数据的 一致性; </p>
+                    <p> 如保证某个字段的单条记录的唯一性,如表A的操作成功,而接下来的表B的操作因为要保证某个字段的单条记
+                        录的唯一性,表B的操作失败了,不幸的是之前表A的数据已接插入无用的数据,这时就可以使用回滚操作
+                    </p>
+                </h5>
+                <hr>
+            </li>
+            <li>
+            <h3>
+                事务在Thinkphp5.1中的使用。
+            </h3>
+            <h5>
+                <p>使用事务处理的话，需要数据库引擎支持事务处理。比如 MySQL 的 MyISAM 不支持事务处理，需要使用 InnoDB 引擎。</p>
+                <pre>
+// 启动事务
+Db::startTrans();
+try {
+    Db::table('think_user')->find(1);
+    Db::table('think_user')->delete(1);
+    // 提交事务
+    Db::commit();
+} catch (\Exception $e) {
+    // 回滚事务
+    Db::rollback();
+}
+                </pre>
+            </h5>
+            <hr>
+        </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
