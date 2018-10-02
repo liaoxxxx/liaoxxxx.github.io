@@ -1,19 +1,45 @@
+<!-----------------------------  hearder文件,可以分离 ------------------------------>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>php 最好的编程语言/笑</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jQuery v3.3.1min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/vue_js.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/all_php_style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .back_top{
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+        .container{
+            background-color: #f8f8f8;
+        }
+        @font-face {
+            font-family: 'Glyphicons Halflings';
 
+            src: url('./font/glyphicons-halflings-regular.eot');
+            src: url('./font/glyphicons-halflings-regular.eot?#iefix')
+            format('embedded-opentype'), url('./font/glyphicons-halflings-regular.woff2')
+            format('woff2'), url('./font/glyphicons-halflings-regular.woff') format('woff'),
+            url('./font/glyphicons-halflings-regular.ttf') format('truetype'),
+            url('./font/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+        }
+
+    </style>
 </head>
+<!-----------------------------  hearder文件,可以分离 ------------------------------>
+
+<!----------------------------   这是头部   ---------------------------------->
 <body>
-<div class="container">
-    <nav class="navbar navbar-default">
+<div class="container" style="box-shadow: 5px 5px 5px #bcbcbc">
+    <nav class="navbar navbar-default navbar-inverse">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -23,14 +49,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href=""><span class="php_icon"></span></a>
-
+                <a class="navbar-brand" href="#">liaoxx</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">返回首页</a></li>
+                    <li class="active"><a href="">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
                 </ul>
                 <form class="navbar-form navbar-left">
                     <div class="form-group">
@@ -54,18 +80,31 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+    <div class="jumbotron" style="background-color: #b4b4b4;box-shadow: 5px 5px 0px #9f9f9f">
+        <h1>return true.</h1>
+        <h3>是的，我就是用来写笔记的</h3>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a>
+        <p>Guido van Rossum: I wrote python</p>
+    </div>
+    <!----------------------------   这是头部   ---------------------------------->
+<div class="container">
 
     <div class="content">
         <ul>
             <li>
-                <h2 class=""><a href="#.html">世界上最好的语言</a></h2>
+                <h2 class=""><a href="#">世界上最好的语言</a></h2>
                 <h6>php是世界上最好的语言;不接受反驳.</h6>
                 <hr>
             </li>
 
             <li>
-                <h2 class=""><a href="html/dangers_of_php.html">用php踩过的各种坑</a></h2>
+                <h2 class=""><a href="html/php_html/dangers_of_php.html">用php踩过的各种坑</a></h2>
                 <h6>php是世界上最坑的语言; 收集各种坑.</h6>
+                <hr>
+            </li>
+            <li>
+                <h2 class=""><a href="html/php_html/install_extension.html">安装扩展</a></h2>
+                <h6>收集各种坑.</h6>
                 <hr>
             </li>
 
@@ -89,15 +128,11 @@
                 <h6>empty</h6>
                 <hr>
             </li>
-<<<<<<< HEAD
             <li>
                 <h2 class=""><a href="html/php_html/AjaxExamaple.html"> CURL工具</a></h2>
                 <h6>流弊</h6>
                 <hr>
             </li>
-=======
-
->>>>>>> 208d9f84ae4fe1b82e0dff0f378fcf09f29056ce
         </ul>
     </div>
 </div>
