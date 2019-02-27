@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>避免字段重名</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jQuery%20v3.3.1min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">liaoxx</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="../../index.html">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../vue_js.html">vue.js</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="来探索吧">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">关于</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">乱写的 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="content">
+        <ul>
+            <li>
+                <h3>
+                    通过 props 传递父组件的数据到子组件
+                </h3>
+                    <xmp>
+ <body>
+ <div id="app" class="container">
+     <!--   6.把组件挂载到 实例化的 Vue对象
+        7. v-bind  绑定父组件的值到 给子组件的 uname  同时也在5.中输出了子组件的 uname 属性-->
+     <header_s v-bind:uname="parent_uname"></header_s>
+ </div>
+ <script src="src/js/vue.js"></script>
+ <script>
+     //1.实例化  Vue   父组件
+     var app= new Vue({
+         el:"#app",
+         data:{
+             //2.定义数据
+             parent_uname:"liaoxx"
+         },
+         //3.定义  子组件  header_s
+         components:
+             {
+                 "header_s":{
+                     //4.给组件添加属性  uname
+                     props:['uname'],
+                     //5.在模板中输出定义的属性 uname
+                     template:`<h2 style="color:darkgreen">{{uname}}</h2>  `,
+                 }
+             }
+     })
+</script>
+</body>
+                    </xmp>
+                <hr>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
