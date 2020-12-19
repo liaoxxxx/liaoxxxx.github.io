@@ -1,0 +1,1102 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>各种错误的解决方案 · liaxx 的笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Blankj">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vuex.html" />
+    
+    
+    <link rel="prev" href="axios.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.zhihu.com/people/liaoxxxxx/activities" target="_blank" class="custom-link">找到我</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../spring_boot/">
+            
+                <a href="../spring_boot/">
+            
+                    
+                    Spring Boot
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../spring_boot/task.html">
+            
+                <a href="../spring_boot/task.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../spring_boot/dto_object.html">
+            
+                <a href="../spring_boot/dto_object.html">
+            
+                    
+                    DTO对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../spring_boot/spring_data_jpa.html">
+            
+                <a href="../spring_boot/spring_data_jpa.html">
+            
+                    
+                    JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../spring_boot/spring_data_jpa_query_annotation.html">
+            
+                <a href="../spring_boot/spring_data_jpa_query_annotation.html">
+            
+                    
+                    JPA @Query注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../spring_boot/json_web_token.html">
+            
+                <a href="../spring_boot/json_web_token.html">
+            
+                    
+                    Json Web Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../spring_boot/starter_actuator.html">
+            
+                <a href="../spring_boot/starter_actuator.html">
+            
+                    
+                    Actuator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../spring_boot/mybatis_main.html">
+            
+                <a href="../spring_boot/mybatis_main.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../spring_boot/Value_annotation_of_beans.html">
+            
+                <a href="../spring_boot/Value_annotation_of_beans.html">
+            
+                    
+                    @Value 注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../spring_boot/Maximum_upload_size_exceeded.html">
+            
+                <a href="../spring_boot/Maximum_upload_size_exceeded.html">
+            
+                    
+                    上传文件大小限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../best_practices/">
+            
+                <a href="../best_practices/">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../best_practices/request_limiter_redis.html">
+            
+                <a href="../best_practices/request_limiter_redis.html">
+            
+                    
+                    redis限流器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../swoft/">
+            
+                <a href="../swoft/">
+            
+                    
+                    Swoft
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../swoft/setup_debug.html">
+            
+                <a href="../swoft/setup_debug.html">
+            
+                    
+                    安装调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../swoft/task.html">
+            
+                <a href="../swoft/task.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../swoft/coroutine.html">
+            
+                <a href="../swoft/coroutine.html">
+            
+                    
+                    协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../swoft/aop.html">
+            
+                <a href="../swoft/aop.html">
+            
+                    
+                    AOP切面编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../php/">
+            
+                <a href="../php/">
+            
+                    
+                    php
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../php/directory_recursive_iterator.html">
+            
+                <a href="../php/directory_recursive_iterator.html">
+            
+                    
+                    官方文件遍历实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../php/solution_of_curl_timeout.html">
+            
+                <a href="../php/solution_of_curl_timeout.html">
+            
+                    
+                    处理curl 超时
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../php/stream.html">
+            
+                <a href="../php/stream.html">
+            
+                    
+                    文件操作和流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../thinkphp/">
+            
+                <a href="../thinkphp/">
+            
+                    
+                    ThinkPHP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../thinkphp/Redis_delete_ is_deprecated.html">
+            
+                <a href="../thinkphp/Redis_delete_ is_deprecated.html">
+            
+                    
+                    Redis::delete()被弃用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../thinkphp/linked_model_of_thinkphp_3.html">
+            
+                <a href="../thinkphp/linked_model_of_thinkphp_3.html">
+            
+                    
+                    模型 非 主键一对一关联
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../laravel/">
+            
+                <a href="../laravel/">
+            
+                    
+                    Laravel
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../laravel/some_solution.html">
+            
+                <a href="../laravel/some_solution.html">
+            
+                    
+                    各种日常记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../laravel/run_on_laravel-s.html">
+            
+                <a href="../laravel/run_on_laravel-s.html">
+            
+                    
+                    使用 laravel-s扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tcp_and_ip/">
+            
+                <a href="../tcp_and_ip/">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tcp_and_ip/diff_between_0_0_0_0_and_127_0_0_1.html">
+            
+                <a href="../tcp_and_ip/diff_between_0_0_0_0_and_127_0_0_1.html">
+            
+                    
+                    0.0.0.0 与 127.0.0.1的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../tcp_and_ip/http_protocol.html">
+            
+                <a href="../tcp_and_ip/http_protocol.html">
+            
+                    
+                    http协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../linux/README.md">
+            
+                <span>
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../linux/about_ssh.html">
+            
+                <a href="../linux/about_ssh.html">
+            
+                    
+                    关于ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../docker/">
+            
+                <a href="../docker/">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../docker/operatineo_of_container.html">
+            
+                <a href="../docker/operatineo_of_container.html">
+            
+                    
+                    操作容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Vue/README.md">
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="axios.html">
+            
+                <a href="axios.html">
+            
+                    
+                    Axios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.2" data-path="some_solution.html">
+            
+                <a href="some_solution.html">
+            
+                    
+                    各种错误的解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="vuex.html">
+            
+                <a href="vuex.html">
+            
+                    
+                    Vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="router_of_vue.html">
+            
+                <a href="router_of_vue.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="global_common_component.html">
+            
+                <a href="global_common_component.html">
+            
+                    
+                    定义全局的公用的组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="exm_of_tab_menu.html">
+            
+                <a href="exm_of_tab_menu.html">
+            
+                    
+                    各种组件实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../redis/">
+            
+                <a href="../redis/">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../redis/used_pipeline.html">
+            
+                <a href="../redis/used_pipeline.html">
+            
+                    
+                    管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../redis/pipline_and_trnasation.html">
+            
+                <a href="../redis/pipline_and_trnasation.html">
+            
+                    
+                    管道与事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../data_structure_and_algorithms/">
+            
+                <a href="../data_structure_and_algorithms/">
+            
+                    
+                    数据结构与算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../design_patterns/">
+            
+                <a href="../design_patterns/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../design_patterns/proxy_patterns.html">
+            
+                <a href="../design_patterns/proxy_patterns.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../design_patterns/facade_patterns.html">
+            
+                <a href="../design_patterns/facade_patterns.html">
+            
+                    
+                    门面、外观模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../mysql/">
+            
+                <a href="../mysql/">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../mysql/mysql8_0_authentication_SHA2.html">
+            
+                <a href="../mysql/mysql8_0_authentication_SHA2.html">
+            
+                    
+                    SHA2密码验证错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../mysql/solution_of_mysql.html">
+            
+                <a href="../mysql/solution_of_mysql.html">
+            
+                    
+                    常见的错误及解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../mysql/extra_of_explain_option.html">
+            
+                <a href="../mysql/extra_of_explain_option.html">
+            
+                    
+                    Explain  中  Extra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../mysql/type_of_explain_option.html">
+            
+                <a href="../mysql/type_of_explain_option.html">
+            
+                    
+                    Explain  中  type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../mysql/replication _slave.html">
+            
+                <a href="../mysql/replication _slave.html">
+            
+                    
+                    主从复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >各种错误的解决方案</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5404;&#x79CD;&#x9519;&#x8BEF;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x5404;&#x79CD;&#x9519;&#x8BEF;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;</h2>
+<h3 id="1--&#x8FD0;&#x884C;-npm-run-dev-&#x62A5;&#x9519;&#x8BEF;&#xFF1A;--missing-script-dev--&#xFF1B;dev-&#x547D;&#x4EE4;-&#x4E0D;&#x5B58;&#x5728;">1.  &#x8FD0;&#x884C;: npm run dev ,&#x62A5;&#x9519;&#x8BEF;&#xFF1A;  missing script: dev  &#xFF1B;dev &#x547D;&#x4EE4; &#x4E0D;&#x5B58;&#x5728;</h3>
+<pre><code class="lang-text">npm ERR! missing script: dev
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/liaoxx/.npm/_logs/2020-01-16T09_13_16_773Z-debug.log
+</code></pre>
+<blockquote>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A; &#x5728;&#x9879;&#x76EE;&#x7684;&#x6839;&#x76EE;&#x5F55; &#x7684;package.josn&#x6587;&#x4EF6;&#x7684; &apos;scripts&apos; &#x9879;&#x6CE8;&#x518C; dev &#x547D;&#x4EE4;</p>
+</blockquote>
+<pre><code class="lang-text">{
+  &quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;vue-cli-service serve&quot;,
+    &quot;serve&quot;: &quot;vue-cli-service serve&quot;,
+    &quot;build&quot;: &quot;vue-cli-service build&quot;,
+    &quot;lint&quot;: &quot;vue-cli-service lint&quot;
+  },
+}
+</code></pre>
+<hr>
+<h3 id="2-&#x8BFB;&#x53D6;configdevenvjs-&#x6216;prodenvjs-&#x7B49;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6240;&#x914D;&#x7F6E;&#x7684;&#x5E38;&#x91CF;&#x4E3A;-undefined&#xFF0C;">2. &#x8BFB;&#x53D6;/config/dev.env.js &#x6216;prod.env.js &#x7B49;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6240;&#x914D;&#x7F6E;&#x7684;&#x5E38;&#x91CF;&#x4E3A; undefined&#xFF0C;</h3>
+<h5 id="21-&#x5982;-devenvjs">2.1 &#x5982; dev.env.js</h5>
+<pre><code class="lang-js"><span class="hljs-meta">
+&apos;use strict&apos;</span>
+<span class="hljs-keyword">const</span> merge = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;webpack-merge&apos;</span>)
+<span class="hljs-keyword">const</span> prodEnv = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./prod.env&apos;</span>)
+
+<span class="hljs-built_in">module</span>.exports = merge(prodEnv, {
+  NODE_ENV: <span class="hljs-string">&apos;&quot;development&quot;&apos;</span>,
+  API_HOST:<span class="hljs-string">&apos;&quot;http://localhost:8081/&quot;&apos;</span>,
+  SERVER_HOST: <span class="hljs-string">&apos;&quot;http://localhost:8081&quot;&apos;</span>  <span class="hljs-comment">//&#x521A;&#x914D;&#x7F6E;&#x7684;&#x6587;&#x4EF6;</span>
+})
+</code></pre>
+<h5 id="22-&#x5728;&#x4EE3;&#x7801;&#x4E2D;-&#x83B7;&#x5F97;&#x914D;&#x7F6E;&#x7684;&#x5E38;&#x91CF;--&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;-undefined">2.2 &#x5728;&#x4EE3;&#x7801;&#x4E2D; &#x83B7;&#x5F97;&#x914D;&#x7F6E;&#x7684;&#x5E38;&#x91CF;  &#x7ED3;&#x679C;&#x4E3A;&#xFF1A; undefined</h5>
+<pre><code class="lang-js">    <span class="hljs-built_in">console</span>.log(process.env.SERVER_HOST)   <span class="hljs-comment">//&#x7ED3;&#x679C;&#x4E3A; undefined;</span>
+</code></pre>
+<h5 id="23-&#x539F;&#x56E0;-&#x5728;dev-&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4E2D;-&#xFF0C;&#x4FEE;&#x6539;-config-&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x5E76;&#x6CA1;&#x6709;&#x91CD;&#x65B0;-&#x5F15;&#x5165;&#x7F16;&#x8BD1;&#xFF0C;&#x6240;&#x4EE5;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#x914D;&#x7F6E;&#x7684;&#x5E38;&#x91CF;&#x503C;">2.3 &#x539F;&#x56E0; &#x5728;dev &#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4E2D; &#xFF0C;&#x4FEE;&#x6539; /config &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x5E76;&#x6CA1;&#x6709;&#x91CD;&#x65B0; &#x5F15;&#x5165;&#x7F16;&#x8BD1;&#xFF0C;&#x6240;&#x4EE5;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#x914D;&#x7F6E;&#x7684;&#x5E38;&#x91CF;&#x503C;</h5>
+<h5 id="24-&#x89E3;&#x51B3;&#x65B9;&#x6848;-&#x91CD;&#x65B0;&#x8FD0;&#x884C;-npm-run-dev--&#x6216;&#x5176;&#x4ED6;&#x7684;&#x76F8;&#x5E94;&#x7684;&#x547D;&#x4EE4;">2.4 &#x89E3;&#x51B3;&#x65B9;&#x6848; &#x91CD;&#x65B0;&#x8FD0;&#x884C; npm run dev  &#x6216;&#x5176;&#x4ED6;&#x7684;&#x76F8;&#x5E94;&#x7684;&#x547D;&#x4EE4;</h5>
+<hr>
+<h3 id="3-&#x5207;&#x52FF;&#x4F7F;&#x7528;&#x5185;&#x7F6E;&#x6216;&#x4FDD;&#x7559;&#x7684;html&#x5143;&#x7D20;&#x4F5C;&#x4E3A;&#x7EC4;&#x4EF6;id">3. &#x5207;&#x52FF;&#x4F7F;&#x7528;&#x5185;&#x7F6E;&#x6216;&#x4FDD;&#x7559;&#x7684;HTML&#x5143;&#x7D20;&#x4F5C;&#x4E3A;&#x7EC4;&#x4EF6;ID</h3>
+<pre><code>
+    //&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x5185;&#x7F6E;&#x6216;&#x4FDD;&#x7559;&#x7684;HTML&#x5143;&#x7D20;&#x4F5C;&#x4E3A;&#x7EC4;&#x4EF6;ID
+   Do not use built-in or reserved HTML elements as component id: header
+</code></pre><blockquote>
+<p>&#x4F8B;&#x5982; </p>
+</blockquote>
+<pre><code>&lt;template&gt;
+&lt;div class=&quot;header-row-fixed&quot;&gt;
+&lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+export default {
+  name: &apos;header&apos;,  //header &#x662F;&#x5185;&#x7F6E;&#x4FDD;&#x7559;&#x7684;&#x6807;&#x7B7E;
+  data () {
+    return {
+    }
+  },
+
+  methods: {
+
+  }
+}
+&lt;/script&gt;
+</code></pre><h3 id="4-vue-&#x6253;&#x5305;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x62A5;&#x9519;-unhandledpromiserejectionwarning-csssyntaxerror">4. vue &#x6253;&#x5305;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x62A5;&#x9519; <code>UnhandledPromiseRejectionWarning: CssSyntaxError:</code></h3>
+<h4 id="&#x62A5;&#x9519;&#x4FE1;&#x606F;">&#x62A5;&#x9519;&#x4FE1;&#x606F;</h4>
+<pre><code>
+C:\coding\jiucheng\200520tianan\jinmantang-vue&gt;npm run build
+
+&gt; jinmantang@1.0.0 build C:\coding\jiucheng\200520tianan\jinmantang-vue
+&gt; node build/build.js
+
+| building for production...Error processing file: vue_static/css/app.4574041e9c9954f9292855c5f6d7a41f.css
+(node:6496) UnhandledPromiseRejectionWarning: CssSyntaxError: C:\coding\jiucheng\200520tianan\jinmantang-vue\vue_static\css\app.4574041e9c9954f9292855c5f6d7a41f.css:13286:1: Unknown word
+</code></pre><h4 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x89E3;&#x51B3;&#x65B9;&#x6848;</h4>
+<blockquote>
+<p>&#x6CE8;&#x91CA;webpack &#x914D;&#x7F6E; /build/webpack.pro.conf.js</p>
+</blockquote>
+<pre><code>
+   // &#x662F;&#x5426;&#x5141;&#x8BB8; css &#x884C;&#x5185;&#x6CE8;&#x91CA;
+   /* new OptimizeCSSPlugin({
+      cssProcessorOptions: config.build.productionSourceMap
+        ? { safe: true, map: { inline: false } }
+        : { safe: true }
+    }),*/
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="axios.html" class="navigation navigation-prev " aria-label="Previous page: Axios">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vuex.html" class="navigation navigation-next " aria-label="Next page: Vuex">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"各种错误的解决方案","level":"1.11.2","depth":2,"next":{"title":"Vuex","level":"1.11.3","depth":2,"path":"vue/vuex.md","ref":"vue/vuex.md","articles":[]},"previous":{"title":"Axios","level":"1.11.1","depth":2,"path":"vue/axios.md","ref":"vue/axios.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/liaoxxxx"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.png","title":"","button":"赞赏","alipayText":" "},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"Blankj","repo":"glory","type":"star","size":"small","count":true}]},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Blankj","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"liaxx 的笔记","language":"zh-hans","links":{"sidebar":{"找到我":"https://www.zhihu.com/people/liaoxxxxx/activities"}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"vue/some_solution.md","mtime":"2020-06-09T02:43:15.401Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-01T08:30:05.363Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

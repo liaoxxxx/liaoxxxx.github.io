@@ -1,0 +1,1019 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>最佳实践 · liaxx 的笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Blankj">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="request_limiter_redis.html" />
+    
+    
+    <link rel="prev" href="../spring_boot/Maximum_upload_size_exceeded.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.zhihu.com/people/liaoxxxxx/activities" target="_blank" class="custom-link">找到我</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../spring_boot/">
+            
+                <a href="../spring_boot/">
+            
+                    
+                    Spring Boot
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../spring_boot/task.html">
+            
+                <a href="../spring_boot/task.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../spring_boot/dto_object.html">
+            
+                <a href="../spring_boot/dto_object.html">
+            
+                    
+                    DTO对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../spring_boot/spring_data_jpa.html">
+            
+                <a href="../spring_boot/spring_data_jpa.html">
+            
+                    
+                    JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../spring_boot/spring_data_jpa_query_annotation.html">
+            
+                <a href="../spring_boot/spring_data_jpa_query_annotation.html">
+            
+                    
+                    JPA @Query注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../spring_boot/json_web_token.html">
+            
+                <a href="../spring_boot/json_web_token.html">
+            
+                    
+                    Json Web Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../spring_boot/starter_actuator.html">
+            
+                <a href="../spring_boot/starter_actuator.html">
+            
+                    
+                    Actuator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../spring_boot/mybatis_main.html">
+            
+                <a href="../spring_boot/mybatis_main.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../spring_boot/Value_annotation_of_beans.html">
+            
+                <a href="../spring_boot/Value_annotation_of_beans.html">
+            
+                    
+                    @Value 注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../spring_boot/Maximum_upload_size_exceeded.html">
+            
+                <a href="../spring_boot/Maximum_upload_size_exceeded.html">
+            
+                    
+                    上传文件大小限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="request_limiter_redis.html">
+            
+                <a href="request_limiter_redis.html">
+            
+                    
+                    redis限流器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../swoft/">
+            
+                <a href="../swoft/">
+            
+                    
+                    Swoft
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../swoft/setup_debug.html">
+            
+                <a href="../swoft/setup_debug.html">
+            
+                    
+                    安装调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../swoft/task.html">
+            
+                <a href="../swoft/task.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../swoft/coroutine.html">
+            
+                <a href="../swoft/coroutine.html">
+            
+                    
+                    协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../swoft/aop.html">
+            
+                <a href="../swoft/aop.html">
+            
+                    
+                    AOP切面编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../php/">
+            
+                <a href="../php/">
+            
+                    
+                    php
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../php/directory_recursive_iterator.html">
+            
+                <a href="../php/directory_recursive_iterator.html">
+            
+                    
+                    官方文件遍历实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../php/solution_of_curl_timeout.html">
+            
+                <a href="../php/solution_of_curl_timeout.html">
+            
+                    
+                    处理curl 超时
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../php/stream.html">
+            
+                <a href="../php/stream.html">
+            
+                    
+                    文件操作和流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../thinkphp/">
+            
+                <a href="../thinkphp/">
+            
+                    
+                    ThinkPHP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../thinkphp/Redis_delete_ is_deprecated.html">
+            
+                <a href="../thinkphp/Redis_delete_ is_deprecated.html">
+            
+                    
+                    Redis::delete()被弃用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../thinkphp/linked_model_of_thinkphp_3.html">
+            
+                <a href="../thinkphp/linked_model_of_thinkphp_3.html">
+            
+                    
+                    模型 非 主键一对一关联
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../laravel/">
+            
+                <a href="../laravel/">
+            
+                    
+                    Laravel
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../laravel/some_solution.html">
+            
+                <a href="../laravel/some_solution.html">
+            
+                    
+                    各种日常记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../laravel/run_on_laravel-s.html">
+            
+                <a href="../laravel/run_on_laravel-s.html">
+            
+                    
+                    使用 laravel-s扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tcp_and_ip/">
+            
+                <a href="../tcp_and_ip/">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tcp_and_ip/diff_between_0_0_0_0_and_127_0_0_1.html">
+            
+                <a href="../tcp_and_ip/diff_between_0_0_0_0_and_127_0_0_1.html">
+            
+                    
+                    0.0.0.0 与 127.0.0.1的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../tcp_and_ip/http_protocol.html">
+            
+                <a href="../tcp_and_ip/http_protocol.html">
+            
+                    
+                    http协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../linux/README.md">
+            
+                <span>
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../linux/about_ssh.html">
+            
+                <a href="../linux/about_ssh.html">
+            
+                    
+                    关于ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../docker/">
+            
+                <a href="../docker/">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../docker/operatineo_of_container.html">
+            
+                <a href="../docker/operatineo_of_container.html">
+            
+                    
+                    操作容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Vue/README.md">
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../vue/axios.html">
+            
+                <a href="../vue/axios.html">
+            
+                    
+                    Axios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../vue/some_solution.html">
+            
+                <a href="../vue/some_solution.html">
+            
+                    
+                    各种错误的解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../vue/vuex.html">
+            
+                <a href="../vue/vuex.html">
+            
+                    
+                    Vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../vue/router_of_vue.html">
+            
+                <a href="../vue/router_of_vue.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../vue/global_common_component.html">
+            
+                <a href="../vue/global_common_component.html">
+            
+                    
+                    定义全局的公用的组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../vue/exm_of_tab_menu.html">
+            
+                <a href="../vue/exm_of_tab_menu.html">
+            
+                    
+                    各种组件实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../redis/">
+            
+                <a href="../redis/">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../redis/used_pipeline.html">
+            
+                <a href="../redis/used_pipeline.html">
+            
+                    
+                    管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../redis/pipline_and_trnasation.html">
+            
+                <a href="../redis/pipline_and_trnasation.html">
+            
+                    
+                    管道与事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../data_structure_and_algorithms/">
+            
+                <a href="../data_structure_and_algorithms/">
+            
+                    
+                    数据结构与算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../design_patterns/">
+            
+                <a href="../design_patterns/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../design_patterns/proxy_patterns.html">
+            
+                <a href="../design_patterns/proxy_patterns.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../design_patterns/facade_patterns.html">
+            
+                <a href="../design_patterns/facade_patterns.html">
+            
+                    
+                    门面、外观模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../mysql/">
+            
+                <a href="../mysql/">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../mysql/mysql8_0_authentication_SHA2.html">
+            
+                <a href="../mysql/mysql8_0_authentication_SHA2.html">
+            
+                    
+                    SHA2密码验证错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../mysql/solution_of_mysql.html">
+            
+                <a href="../mysql/solution_of_mysql.html">
+            
+                    
+                    常见的错误及解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../mysql/extra_of_explain_option.html">
+            
+                <a href="../mysql/extra_of_explain_option.html">
+            
+                    
+                    Explain  中  Extra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../mysql/type_of_explain_option.html">
+            
+                <a href="../mysql/type_of_explain_option.html">
+            
+                    
+                    Explain  中  type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../mysql/replication _slave.html">
+            
+                <a href="../mysql/replication _slave.html">
+            
+                    
+                    主从复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >最佳实践</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x4E00;&#x4E9B;&#x5B9E;&#x8DF5;&#x7684;&#x4EE3;&#x7801;&#x7247;&#x6BB5;">&#x4E00;&#x4E9B;&#x5B9E;&#x8DF5;&#x7684;&#x4EE3;&#x7801;&#x7247;&#x6BB5;</h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../spring_boot/Maximum_upload_size_exceeded.html" class="navigation navigation-prev " aria-label="Previous page: 上传文件大小限制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="request_limiter_redis.html" class="navigation navigation-next " aria-label="Next page: redis限流器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"最佳实践","level":"1.3","depth":1,"next":{"title":"redis限流器","level":"1.3.1","depth":2,"path":"best_practices/request_limiter_redis.md","ref":"best_practices/request_limiter_redis.md","articles":[]},"previous":{"title":"上传文件大小限制","level":"1.2.9","depth":2,"path":"spring_boot/Maximum_upload_size_exceeded.md","ref":"spring_boot/Maximum_upload_size_exceeded.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/liaoxxxx"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.png","title":"","button":"赞赏","alipayText":" "},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"Blankj","repo":"glory","type":"star","size":"small","count":true}]},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Blankj","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"liaxx 的笔记","language":"zh-hans","links":{"sidebar":{"找到我":"https://www.zhihu.com/people/liaoxxxxx/activities"}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"best_practices/README.md","mtime":"2020-03-26T06:18:28.011Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-01T08:30:05.363Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

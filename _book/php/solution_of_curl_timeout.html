@@ -1,0 +1,1136 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>处理curl 超时 · liaxx 的笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Blankj">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="stream.html" />
+    
+    
+    <link rel="prev" href="directory_recursive_iterator.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.zhihu.com/people/liaoxxxxx/activities" target="_blank" class="custom-link">找到我</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../spring_boot/">
+            
+                <a href="../spring_boot/">
+            
+                    
+                    Spring Boot
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../spring_boot/task.html">
+            
+                <a href="../spring_boot/task.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../spring_boot/dto_object.html">
+            
+                <a href="../spring_boot/dto_object.html">
+            
+                    
+                    DTO对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../spring_boot/spring_data_jpa.html">
+            
+                <a href="../spring_boot/spring_data_jpa.html">
+            
+                    
+                    JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../spring_boot/spring_data_jpa_query_annotation.html">
+            
+                <a href="../spring_boot/spring_data_jpa_query_annotation.html">
+            
+                    
+                    JPA @Query注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../spring_boot/json_web_token.html">
+            
+                <a href="../spring_boot/json_web_token.html">
+            
+                    
+                    Json Web Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../spring_boot/starter_actuator.html">
+            
+                <a href="../spring_boot/starter_actuator.html">
+            
+                    
+                    Actuator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../spring_boot/mybatis_main.html">
+            
+                <a href="../spring_boot/mybatis_main.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../spring_boot/Value_annotation_of_beans.html">
+            
+                <a href="../spring_boot/Value_annotation_of_beans.html">
+            
+                    
+                    @Value 注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../spring_boot/Maximum_upload_size_exceeded.html">
+            
+                <a href="../spring_boot/Maximum_upload_size_exceeded.html">
+            
+                    
+                    上传文件大小限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../best_practices/">
+            
+                <a href="../best_practices/">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../best_practices/request_limiter_redis.html">
+            
+                <a href="../best_practices/request_limiter_redis.html">
+            
+                    
+                    redis限流器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../swoft/">
+            
+                <a href="../swoft/">
+            
+                    
+                    Swoft
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../swoft/setup_debug.html">
+            
+                <a href="../swoft/setup_debug.html">
+            
+                    
+                    安装调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../swoft/task.html">
+            
+                <a href="../swoft/task.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../swoft/coroutine.html">
+            
+                <a href="../swoft/coroutine.html">
+            
+                    
+                    协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../swoft/aop.html">
+            
+                <a href="../swoft/aop.html">
+            
+                    
+                    AOP切面编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    php
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="directory_recursive_iterator.html">
+            
+                <a href="directory_recursive_iterator.html">
+            
+                    
+                    官方文件遍历实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="solution_of_curl_timeout.html">
+            
+                <a href="solution_of_curl_timeout.html">
+            
+                    
+                    处理curl 超时
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="stream.html">
+            
+                <a href="stream.html">
+            
+                    
+                    文件操作和流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../thinkphp/">
+            
+                <a href="../thinkphp/">
+            
+                    
+                    ThinkPHP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../thinkphp/Redis_delete_ is_deprecated.html">
+            
+                <a href="../thinkphp/Redis_delete_ is_deprecated.html">
+            
+                    
+                    Redis::delete()被弃用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../thinkphp/linked_model_of_thinkphp_3.html">
+            
+                <a href="../thinkphp/linked_model_of_thinkphp_3.html">
+            
+                    
+                    模型 非 主键一对一关联
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../laravel/">
+            
+                <a href="../laravel/">
+            
+                    
+                    Laravel
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../laravel/some_solution.html">
+            
+                <a href="../laravel/some_solution.html">
+            
+                    
+                    各种日常记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../laravel/run_on_laravel-s.html">
+            
+                <a href="../laravel/run_on_laravel-s.html">
+            
+                    
+                    使用 laravel-s扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tcp_and_ip/">
+            
+                <a href="../tcp_and_ip/">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tcp_and_ip/diff_between_0_0_0_0_and_127_0_0_1.html">
+            
+                <a href="../tcp_and_ip/diff_between_0_0_0_0_and_127_0_0_1.html">
+            
+                    
+                    0.0.0.0 与 127.0.0.1的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../tcp_and_ip/http_protocol.html">
+            
+                <a href="../tcp_and_ip/http_protocol.html">
+            
+                    
+                    http协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../linux/README.md">
+            
+                <span>
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../linux/about_ssh.html">
+            
+                <a href="../linux/about_ssh.html">
+            
+                    
+                    关于ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../docker/">
+            
+                <a href="../docker/">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../docker/operatineo_of_container.html">
+            
+                <a href="../docker/operatineo_of_container.html">
+            
+                    
+                    操作容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Vue/README.md">
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../vue/axios.html">
+            
+                <a href="../vue/axios.html">
+            
+                    
+                    Axios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../vue/some_solution.html">
+            
+                <a href="../vue/some_solution.html">
+            
+                    
+                    各种错误的解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../vue/vuex.html">
+            
+                <a href="../vue/vuex.html">
+            
+                    
+                    Vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../vue/router_of_vue.html">
+            
+                <a href="../vue/router_of_vue.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../vue/global_common_component.html">
+            
+                <a href="../vue/global_common_component.html">
+            
+                    
+                    定义全局的公用的组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../vue/exm_of_tab_menu.html">
+            
+                <a href="../vue/exm_of_tab_menu.html">
+            
+                    
+                    各种组件实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../redis/">
+            
+                <a href="../redis/">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../redis/used_pipeline.html">
+            
+                <a href="../redis/used_pipeline.html">
+            
+                    
+                    管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../redis/pipline_and_trnasation.html">
+            
+                <a href="../redis/pipline_and_trnasation.html">
+            
+                    
+                    管道与事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../data_structure_and_algorithms/">
+            
+                <a href="../data_structure_and_algorithms/">
+            
+                    
+                    数据结构与算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../design_patterns/">
+            
+                <a href="../design_patterns/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../design_patterns/proxy_patterns.html">
+            
+                <a href="../design_patterns/proxy_patterns.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../design_patterns/facade_patterns.html">
+            
+                <a href="../design_patterns/facade_patterns.html">
+            
+                    
+                    门面、外观模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../mysql/">
+            
+                <a href="../mysql/">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../mysql/mysql8_0_authentication_SHA2.html">
+            
+                <a href="../mysql/mysql8_0_authentication_SHA2.html">
+            
+                    
+                    SHA2密码验证错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../mysql/solution_of_mysql.html">
+            
+                <a href="../mysql/solution_of_mysql.html">
+            
+                    
+                    常见的错误及解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../mysql/extra_of_explain_option.html">
+            
+                <a href="../mysql/extra_of_explain_option.html">
+            
+                    
+                    Explain  中  Extra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../mysql/type_of_explain_option.html">
+            
+                <a href="../mysql/type_of_explain_option.html">
+            
+                    
+                    Explain  中  type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../mysql/replication _slave.html">
+            
+                <a href="../mysql/replication _slave.html">
+            
+                    
+                    主从复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >处理curl 超时</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x5904;&#x7406;curl&#x8D85;&#x65F6;&#x95EE;&#x9898;">&#x5904;&#x7406;curl&#x8D85;&#x65F6;&#x95EE;&#x9898;</h3>
+<h5 id="curl&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x5728;&#x4EE3;&#x7801;&#x6CA1;&#x6709;&#x540E;&#x4EFB;&#x4F55;&#x8BBE;&#x7F6E;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x672C;&#x5730;&#x73AF;&#x5883;&#x662F;10&#x79D2;&#xFF0C;&#x6700;&#x540E;&#x62FF;&#x5230;&#x7684;&#x6570;&#x636E;&#x662F;null">curl&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;,&#x5728;&#x4EE3;&#x7801;&#x6CA1;&#x6709;&#x540E;&#x4EFB;&#x4F55;&#x8BBE;&#x7F6E;&#x7684;&#x60C5;&#x51B5;&#x4E0B;,&#x672C;&#x5730;&#x73AF;&#x5883;&#x662F;10&#x79D2;&#xFF0C;&#x6700;&#x540E;&#x62FF;&#x5230;&#x7684;&#x6570;&#x636E;&#x662F;null,</h5>
+<blockquote>
+<ol>
+<li>&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x80AF;&#x5B9A;&#x4E0D;&#x8981;&#x9488;&#x5BF9;&#x5904;&#x7406;, &#x4EE3;&#x7801;&#x5185;&#x90E8;&#x7684;&#x903B;&#x8F91;&#x662F;redis&#x961F;&#x5217;&#xFF0C; &#x6240;&#x4EE5;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x4E0B;&#xFF0C;&#x91CD;&#x65B0;&#x5165;&#x961F;&#x5C31;&#x597D;&#x4E86;;</li>
+<li>&#x4F46;&#x662F;&#x4E5F;&#x662F;&#x5BF9;curl &#x8D85;&#x65F6;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#xFF0C;&#x5C06;&#x5B83;&#x63A7;&#x5236;&#x8D77;&#x6765;</li>
+</ol>
+</blockquote>
+<h4 id="&#x5206;&#x6790;">&#x5206;&#x6790;</h4>
+<h5 id="php&#x5B98;&#x7F51;&#x7684;&#x89E3;&#x91CA;&#x662F;&#x4E3B;&#x8981;&#x662F;&#x4E24;&#x4E2A;&#x9009;&#x9879;&#x800C;&#x4E14;&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x503C;">PHP&#x5B98;&#x7F51;&#x7684;&#x89E3;&#x91CA;&#x662F;&#x4E3B;&#x8981;&#x662F;&#x4E24;&#x4E2A;&#x9009;&#x9879;,&#x800C;&#x4E14;&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x503C;</h5>
+<blockquote>
+<ol>
+<li><p>CURLOPT_CONNECTTIMEOUT  &#x5728;&#x5C1D;&#x8BD5;&#x8FDE;&#x63A5;&#x65F6;&#x7B49;&#x5F85;&#x7684;&#x79D2;&#x6570;&#x3002;&#x8BBE;&#x7F6E;&#x4E3A;0&#xFF0C;&#x5219;&#x65E0;&#x9650;&#x7B49;&#x5F85;&#x3002;CURLOPT_CONNECTTIMEOUT &#x7528;&#x6765;&#x544A;&#x8BC9; PHP &#x5728;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#x524D;&#x7B49;&#x5F85;&#x591A;&#x4E45;&#xFF08;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x4E4B;&#x540E;&#x5C31;&#x4F1A;&#x5F00;&#x59CB;&#x7F13;&#x51B2;&#x8F93;&#x51FA;&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4E3A;&#x4E86;&#x5E94;&#x5BF9;&#x76EE;&#x6807;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8FC7;&#x8F7D;&#xFF0C;&#x4E0B;&#x7EBF;&#xFF0C;&#x6216;&#x8005;&#x5D29;&#x6E83;&#x7B49;&#x53EF;&#x80FD;&#x72B6;&#x51B5;</p>
+</li>
+<li><p>CURLOPT_TIMEOUT &#x5141;&#x8BB8; cURL &#x51FD;&#x6570;&#x6267;&#x884C;&#x7684;&#x6700;&#x957F;&#x79D2;&#x6570;&#x3002;CURLOPT_TIMEOUT &#x7528;&#x6765;&#x544A;&#x8BC9;&#x6210;&#x529F; PHP &#x4ECE;&#x670D;&#x52A1;&#x5668;&#x63A5;&#x6536;&#x7F13;&#x51B2;&#x5B8C;&#x6210;&#x524D;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x591A;&#x957F;&#x65F6;&#x95F4;&#xFF0C;&#x5982;&#x679C;&#x76EE;&#x6807;&#x662F;&#x4E2A;&#x5DE8;&#x5927;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x751F;&#x6210;&#x5185;&#x5BB9;&#x901F;&#x5EA6;&#x8FC7;&#x6162;&#x6216;&#x8005;&#x94FE;&#x8DEF;&#x901F;&#x5EA6;&#x8FC7;&#x6162;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x5C31;&#x4F1A;&#x5F88;&#x6709;&#x7528;</p>
+</li>
+</ol>
+</blockquote>
+<h4 id="&#x89E3;&#x51B3;">&#x89E3;&#x51B3;</h4>
+<pre><code class="lang-php">        $curl = curl_init();
+        <span class="hljs-comment">//&#x5728;http &#x8BF7;&#x6C42;&#x5934;&#x52A0;&#x5165; gzip&#x538B;&#x7F29;</span>
+        curl_setopt($curl, CURLOPT_HTTPHEADER, <span class="hljs-keyword">array</span>(<span class="hljs-string">&apos;Accept-Encoding:gzip&apos;</span>));
+        <span class="hljs-comment">//curl&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x91C7;&#x7528;gzip&#x89E3;&#x538B;</span>
+        curl_setopt($curl, CURLOPT_ENCODING, <span class="hljs-string">&quot;gzip&quot;</span>);
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_HEADER, <span class="hljs-keyword">false</span>);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, <span class="hljs-number">1</span>);
+        <span class="hljs-comment">// &#x5728;&#x5C1D;&#x8BD5;&#x8FDE;&#x63A5;&#x65F6;&#x7B49;&#x5F85;&#x7684;&#x79D2;&#x6570;</span>
+        curl_setopt($curl, CURLOPT_CONNECTTIMEOUT , <span class="hljs-number">3</span>);
+        <span class="hljs-comment">// &#x6700;&#x5927;&#x6267;&#x884C;&#x65F6;&#x95F4;</span>
+        curl_setopt($curl, CURLOPT_TIMEOUT, <span class="hljs-number">5</span>);
+
+        $gray_info = curl_exec($curl);
+
+        <span class="hljs-comment">// curl debug</span>
+        <span class="hljs-keyword">if</span> (curl_errno($curl)) {
+            <span class="hljs-comment">// &#xFF34;&#xFF2F; DO Something</span>
+        }
+</code></pre>
+<h4 id="curl&#x7684;&#x6BEB;&#x79D2;&#x8D85;&#x65F6;&#x7684;&#x4E00;&#x4E2A;bug--&#x642C;&#x8FD0;-httpswwwlaruencecom201401212939html">Curl&#x7684;&#x6BEB;&#x79D2;&#x8D85;&#x65F6;&#x7684;&#x4E00;&#x4E2A;&quot;Bug&quot;  &#x642C;&#x8FD0; <a href="https://www.laruence.com/2014/01/21/2939.html" target="_blank">https://www.laruence.com/2014/01/21/2939.html</a></h4>
+<blockquote>
+<p>&#x6700;&#x8FD1;&#x6211;&#x4EEC;&#x7684;&#x670D;&#x52A1;&#x5728;&#x5347;&#x7EA7;php&#x4F7F;&#x7528;&#x7684;libcurl, &#x671F;&#x671B;&#x65B0;&#x7248;&#x672C;&#x7684;libcurl&#x652F;&#x6301;&#x6BEB;&#x79D2;&#x7EA7;&#x7684;&#x8D85;&#x65F6;, &#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x66F4;&#x52A0;&#x7CBE;&#x7EC6;&#x7684;&#x63A7;&#x5236;&#x540E;&#x7AEF;&#x7684;&#x63A5;&#x53E3;&#x8D85;&#x65F6;, &#x4ECE;&#x800C;&#x63D0;&#x9AD8;&#x6574;&#x4F53;&#x54CD;&#x5E94;&#x65F6;&#x95F4;.
+&#x4F46;&#x662F;, &#x6211;&#x4EEC;&#x5374;&#x53D1;&#x73B0;, &#x5728;&#x6211;&#x4EEC;&#x7684;CentOS&#x670D;&#x52A1;&#x5668;&#x4E0A;, &#x5F53;&#x4F60;&#x8BBE;&#x7F6E;&#x4E86;&#x5C0F;&#x4E8E;1000ms&#x7684;&#x8D85;&#x65F6;&#x4EE5;&#x540E;, curl&#x4E0D;&#x4F1A;&#x53D1;&#x8D77;&#x4EFB;&#x4F55;&#x8BF7;&#x6C42;, &#x800C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x8D85;&#x65F6;&#x9519;&#x8BEF;(Timeout reached 28).
+&#x539F;&#x6765;, &#x8FD9;&#x91CC;&#x9762;&#x6709;&#x4E00;&#x4E2A;&#x5751;, CURL&#x9ED8;&#x8BA4;&#x7684;, &#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0A;, &#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86;&#x7CFB;&#x7EDF;&#x6807;&#x51C6;&#x7684;DNS&#x89E3;&#x6790;, &#x5219;&#x4F1A;&#x4F7F;&#x7528;SIGALARM&#x6765;&#x63D0;&#x4F9B;&#x63A7;&#x5236;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x8D85;&#x65F6;&#x7684;&#x529F;&#x80FD;, &#x4F46;&#x662F;SIGALARM&#x4E0D;&#x652F;&#x6301;&#x5C0F;&#x4E8E;1s&#x7684;&#x8D85;&#x65F6;, &#x4E8E;&#x662F;&#x5728;libcurl 7.28.1&#x7684;&#x4EE3;&#x7801;&#x4E2D;(&#x6CE8;&#x610F;&#x4E2D;&#x6587;&#x6CE8;&#x91CA;&#x884C;):</p>
+</blockquote>
+<pre><code class="lang-php">int Curl_resolv_timeout(struct connectdata *conn,
+                        <span class="hljs-keyword">const</span> char *hostname,
+                        int port,
+                        struct Curl_dns_entry **entry,
+                        long timeoutms)
+{
+.......
+.......
+<span class="hljs-comment">#ifdef USE_ALARM_TIMEOUT</span>
+  <span class="hljs-keyword">if</span>(data-&gt;set.no_signal)
+    <span class="hljs-comment">/* Ignore the timeout when signals are disabled */</span>
+    timeout = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">else</span>
+    timeout = timeoutms;
+  <span class="hljs-keyword">if</span>(!timeout)
+    <span class="hljs-comment">/* USE_ALARM_TIMEOUT defined, but no timeout actually requested */</span>
+    <span class="hljs-keyword">return</span> Curl_resolv(conn, hostname, port, entry);
+  <span class="hljs-keyword">if</span>(timeout &lt; <span class="hljs-number">1000</span>) <span class="hljs-comment">//&#x5982;&#x679C;&#x5C0F;&#x4E8E;1000, &#x76F4;&#x63A5;&#x8D85;&#x65F6;&#x8FD4;&#x56DE;</span>
+    <span class="hljs-comment">/* The alarm() function only provides integer second resolution, so if
+       we want to wait less than one second we must bail out already now. */</span>
+    <span class="hljs-keyword">return</span> CURLRESOLV_TIMEDOUT;
+  ....
+  ....
+</code></pre>
+<blockquote>
+<p>&#x53EF;&#x89C1;, &#x5F53;&#x4F60;&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x5C0F;&#x4E8E;1000ms&#x7684;&#x65F6;&#x5019;, name&#x89E3;&#x6790;&#x4F1A;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;CURLRESOLV_TIMEOUT, &#x6700;&#x540E;&#x4F1A;&#x5BFC;&#x81F4;CURLE_OPERATION_TIMEDOUT, &#x7136;&#x540E;&#x5C31;Error, Timeout reached&#x4E86;...
+&#x8FD9;....&#x592A;&#x5751;&#x7239;&#x4E86;&#x5427;? &#x96BE;&#x9053;&#x8BF4;, &#x6211;&#x4EEC;&#x5C31;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x6BEB;&#x79D2;&#x8D85;&#x65F6;&#x4E48;? &#x90A3;&#x4F60;&#x63D0;&#x4F9B;&#x8FD9;&#x529F;&#x80FD;&#x5E72;&#x5565;?
+&#x8FD8;&#x662F;&#x770B;&#x4EE3;&#x7801;, &#x8FD8;&#x662F;&#x521A;&#x624D;&#x90A3;&#x6BB5;&#x4EE3;&#x7801;, &#x6CE8;&#x610F;&#x8FD9;&#x4E2A;(&#x4E2D;&#x6587;&#x6CE8;&#x91CA;&#x884C;):</p>
+</blockquote>
+<pre><code class="lang-php"><span class="hljs-comment">#ifdef USE_ALARM_TIMEOUT</span>
+  <span class="hljs-keyword">if</span>(data-&gt;set.no_signal)  <span class="hljs-comment">//&#x6CE8;&#x610F;&#x8FD9;&#x884C;</span>
+    <span class="hljs-comment">/* Ignore the timeout when signals are disabled */</span>
+    timeout = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">else</span>
+    timeout = timeoutms;
+  <span class="hljs-keyword">if</span>(!timeout)
+    <span class="hljs-comment">/* USE_ALARM_TIMEOUT defined, but no timeout actually requested */</span>
+    <span class="hljs-keyword">return</span> Curl_resolv(conn, hostname, port, entry);
+  <span class="hljs-keyword">if</span>(timeout &lt; <span class="hljs-number">1000</span>)
+    <span class="hljs-comment">/* The alarm() function only provides integer second resolution, so if
+       we want to wait less than one second we must bail out already now. */</span>
+    <span class="hljs-keyword">return</span> CURLRESOLV_TIMEDOUT;
+</code></pre>
+<blockquote>
+<p>&#x770B;&#x8D77;&#x6765;, &#x53EA;&#x8981;set.no_signal &#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#x4E3A;1, &#x5C31;&#x53EF;&#x4EE5;&#x7ED5;&#x8FC7;&#x4E86;... &#x90A3;&#x8FD9;&#x4E2A;&#x73A9;&#x610F;&#x662F;&#x5565;&#x5462;?
+&#x8FD9;&#x5C31;&#x7B80;&#x5355;&#x4E86;, grep&#x4E00;&#x4E0B;&#x4EE3;&#x7801;, &#x53D1;&#x73B0;:</p>
+</blockquote>
+<pre><code class="lang-php">  <span class="hljs-keyword">case</span> CURLOPT_NOSIGNAL:
+    <span class="hljs-comment">/*
+     * The application asks not to set any signal() or alarm() handlers,
+     * even when using a timeout.
+     */</span>
+    data-&gt;set.no_signal = (<span class="hljs-number">0</span> != va_arg(param, long))?<span class="hljs-keyword">TRUE</span>:<span class="hljs-keyword">FALSE</span>;
+    <span class="hljs-keyword">break</span>;
+</code></pre>
+<p>&#x54C8;&#x54C8;, &#x539F;&#x6765;&#x662F;&#x8FD9;&#x8D27;:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+   curl_setopt($ch, CURLOPT_NOSIGNAL, <span class="hljs-number">1</span>);
+<span class="hljs-meta">?&gt;</span>
+</code></pre>
+<blockquote>
+<p>&#x52A0;&#x4E0A;&#x8FD9;&#x4E2A;OPT&#x4EE5;&#x540E;, &#x4E00;&#x5207;&#x7EC8;&#x4E8E;&#x6B63;&#x5E38;&#x4E86;!
+&#x540E;&#x8BB0;:
+&#x8FD9;&#x6837;&#x4E00;&#x6765;, &#x5C31;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x9690;&#x60A3;, &#x90A3;&#x5C31;&#x662F;DNS&#x89E3;&#x6790;&#x5C06;&#x4E0D;&#x53D7;&#x8D85;&#x65F6;&#x9650;&#x5236;&#x4E86;, &#x8FD9;&#x5728;&#x4E8E;&#x516C;&#x53F8;&#x5185;&#x90E8;&#x6765;&#x8BF4;, &#x4E00;&#x822C;&#x6CA1;&#x4EC0;&#x4E48;&#x95EE;&#x9898;, &#x4F46;&#x662F;&#x4E07;&#x4E00;DNS&#x670D;&#x52A1;&#x5668;hang&#x4F4F;&#x4E86;, &#x90A3;&#x5C31;&#x53EF;&#x80FD;&#x4F1A;&#x9020;&#x6210;&#x5E94;&#x7528;&#x8D85;&#x65F6;.
+&#x90A3;&#x4E48;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x529E;&#x6CD5;&#x4E48;?
+&#x6709;, &#x90A3;&#x5C31;&#x662F;Mike&#x63D0;&#x9192;&#x7684;, &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BA9;libcurl&#x4F7F;&#x7528;c-ares(C library for asynchronous DNS requests)&#x6765;&#x505A;&#x540D;&#x5B57;&#x89E3;&#x6790;. &#x5177;&#x4F53;&#x7684;&#x53EF;&#x4EE5;&#x5728;config curl&#x7684;&#x65F6;&#x5019;:</p>
+</blockquote>
+<pre><code>./configure --enable-ares[=PATH]
+</code></pre><blockquote>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x8BBE;&#x7F6E;NOSIGNAL&#x4E86; &#x1F642;
+PS, &#x4E3A;&#x4EC0;&#x4E48;&#x51A0;&#x4EE5;&quot;Bug&quot;, &#x6211;&#x53EA;&#x662F;&#x597D;&#x5947;, &#x4ED6;&#x4EEC;&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x7528;setitimer?
+&#x53C2;&#x8003;: <a href="http://stackoverflow.com/questions/7987584/curl-timeout-less-than-1000ms-always-fails" target="_blank">http://stackoverflow.com/questions/7987584/curl-timeout-less-than-1000ms-always-fails</a></p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="directory_recursive_iterator.html" class="navigation navigation-prev " aria-label="Previous page: 官方文件遍历实现">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="stream.html" class="navigation navigation-next " aria-label="Next page: 文件操作和流">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"处理curl 超时","level":"1.5.2","depth":2,"next":{"title":"文件操作和流","level":"1.5.3","depth":2,"path":"php/stream.md","ref":"php/stream.md","articles":[]},"previous":{"title":"官方文件遍历实现","level":"1.5.1","depth":2,"path":"php/directory_recursive_iterator.md","ref":"php/directory_recursive_iterator.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/liaoxxxx"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.png","title":"","button":"赞赏","alipayText":" "},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"Blankj","repo":"glory","type":"star","size":"small","count":true}]},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Blankj","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"liaxx 的笔记","language":"zh-hans","links":{"sidebar":{"找到我":"https://www.zhihu.com/people/liaoxxxxx/activities"}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"php/solution_of_curl_timeout.md","mtime":"2020-03-19T18:30:00.100Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-01T08:30:05.363Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

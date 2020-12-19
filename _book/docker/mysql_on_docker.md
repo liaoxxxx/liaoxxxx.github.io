@@ -1,0 +1,1 @@
+ sudo docker run -p 33060:3306 --name mysql_slave -e MYSQL_ROOT_PASSWORD=root -d mysql-8.0:latest

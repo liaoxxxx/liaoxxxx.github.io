@@ -1,0 +1,1089 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SHA2密码验证错误 · liaxx 的笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Blankj">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="solution_of_mysql.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.zhihu.com/people/liaoxxxxx/activities" target="_blank" class="custom-link">找到我</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../spring_boot/">
+            
+                <a href="../spring_boot/">
+            
+                    
+                    Spring Boot
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../spring_boot/task.html">
+            
+                <a href="../spring_boot/task.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../spring_boot/dto_object.html">
+            
+                <a href="../spring_boot/dto_object.html">
+            
+                    
+                    DTO对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../spring_boot/spring_data_jpa.html">
+            
+                <a href="../spring_boot/spring_data_jpa.html">
+            
+                    
+                    JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../spring_boot/spring_data_jpa_query_annotation.html">
+            
+                <a href="../spring_boot/spring_data_jpa_query_annotation.html">
+            
+                    
+                    JPA @Query注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../spring_boot/json_web_token.html">
+            
+                <a href="../spring_boot/json_web_token.html">
+            
+                    
+                    Json Web Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../spring_boot/starter_actuator.html">
+            
+                <a href="../spring_boot/starter_actuator.html">
+            
+                    
+                    Actuator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../spring_boot/mybatis_main.html">
+            
+                <a href="../spring_boot/mybatis_main.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../spring_boot/Value_annotation_of_beans.html">
+            
+                <a href="../spring_boot/Value_annotation_of_beans.html">
+            
+                    
+                    @Value 注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../spring_boot/Maximum_upload_size_exceeded.html">
+            
+                <a href="../spring_boot/Maximum_upload_size_exceeded.html">
+            
+                    
+                    上传文件大小限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../best_practices/">
+            
+                <a href="../best_practices/">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../best_practices/request_limiter_redis.html">
+            
+                <a href="../best_practices/request_limiter_redis.html">
+            
+                    
+                    redis限流器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../swoft/">
+            
+                <a href="../swoft/">
+            
+                    
+                    Swoft
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../swoft/setup_debug.html">
+            
+                <a href="../swoft/setup_debug.html">
+            
+                    
+                    安装调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../swoft/task.html">
+            
+                <a href="../swoft/task.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../swoft/coroutine.html">
+            
+                <a href="../swoft/coroutine.html">
+            
+                    
+                    协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../swoft/aop.html">
+            
+                <a href="../swoft/aop.html">
+            
+                    
+                    AOP切面编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../php/">
+            
+                <a href="../php/">
+            
+                    
+                    php
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../php/directory_recursive_iterator.html">
+            
+                <a href="../php/directory_recursive_iterator.html">
+            
+                    
+                    官方文件遍历实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../php/solution_of_curl_timeout.html">
+            
+                <a href="../php/solution_of_curl_timeout.html">
+            
+                    
+                    处理curl 超时
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../php/stream.html">
+            
+                <a href="../php/stream.html">
+            
+                    
+                    文件操作和流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../thinkphp/">
+            
+                <a href="../thinkphp/">
+            
+                    
+                    ThinkPHP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../thinkphp/Redis_delete_ is_deprecated.html">
+            
+                <a href="../thinkphp/Redis_delete_ is_deprecated.html">
+            
+                    
+                    Redis::delete()被弃用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../thinkphp/linked_model_of_thinkphp_3.html">
+            
+                <a href="../thinkphp/linked_model_of_thinkphp_3.html">
+            
+                    
+                    模型 非 主键一对一关联
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../laravel/">
+            
+                <a href="../laravel/">
+            
+                    
+                    Laravel
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../laravel/some_solution.html">
+            
+                <a href="../laravel/some_solution.html">
+            
+                    
+                    各种日常记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../laravel/run_on_laravel-s.html">
+            
+                <a href="../laravel/run_on_laravel-s.html">
+            
+                    
+                    使用 laravel-s扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tcp_and_ip/">
+            
+                <a href="../tcp_and_ip/">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tcp_and_ip/diff_between_0_0_0_0_and_127_0_0_1.html">
+            
+                <a href="../tcp_and_ip/diff_between_0_0_0_0_and_127_0_0_1.html">
+            
+                    
+                    0.0.0.0 与 127.0.0.1的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../tcp_and_ip/http_protocol.html">
+            
+                <a href="../tcp_and_ip/http_protocol.html">
+            
+                    
+                    http协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../linux/README.md">
+            
+                <span>
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../linux/about_ssh.html">
+            
+                <a href="../linux/about_ssh.html">
+            
+                    
+                    关于ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../docker/">
+            
+                <a href="../docker/">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../docker/operatineo_of_container.html">
+            
+                <a href="../docker/operatineo_of_container.html">
+            
+                    
+                    操作容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Vue/README.md">
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../vue/axios.html">
+            
+                <a href="../vue/axios.html">
+            
+                    
+                    Axios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../vue/some_solution.html">
+            
+                <a href="../vue/some_solution.html">
+            
+                    
+                    各种错误的解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../vue/vuex.html">
+            
+                <a href="../vue/vuex.html">
+            
+                    
+                    Vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../vue/router_of_vue.html">
+            
+                <a href="../vue/router_of_vue.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../vue/global_common_component.html">
+            
+                <a href="../vue/global_common_component.html">
+            
+                    
+                    定义全局的公用的组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../vue/exm_of_tab_menu.html">
+            
+                <a href="../vue/exm_of_tab_menu.html">
+            
+                    
+                    各种组件实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../redis/">
+            
+                <a href="../redis/">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../redis/used_pipeline.html">
+            
+                <a href="../redis/used_pipeline.html">
+            
+                    
+                    管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../redis/pipline_and_trnasation.html">
+            
+                <a href="../redis/pipline_and_trnasation.html">
+            
+                    
+                    管道与事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../data_structure_and_algorithms/">
+            
+                <a href="../data_structure_and_algorithms/">
+            
+                    
+                    数据结构与算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../design_patterns/">
+            
+                <a href="../design_patterns/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../design_patterns/proxy_patterns.html">
+            
+                <a href="../design_patterns/proxy_patterns.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../design_patterns/facade_patterns.html">
+            
+                <a href="../design_patterns/facade_patterns.html">
+            
+                    
+                    门面、外观模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.15.1" data-path="mysql8_0_authentication_SHA2.html">
+            
+                <a href="mysql8_0_authentication_SHA2.html">
+            
+                    
+                    SHA2密码验证错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="solution_of_mysql.html">
+            
+                <a href="solution_of_mysql.html">
+            
+                    
+                    常见的错误及解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="extra_of_explain_option.html">
+            
+                <a href="extra_of_explain_option.html">
+            
+                    
+                    Explain  中  Extra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="type_of_explain_option.html">
+            
+                <a href="type_of_explain_option.html">
+            
+                    
+                    Explain  中  type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="replication _slave.html">
+            
+                <a href="replication _slave.html">
+            
+                    
+                    主从复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SHA2密码验证错误</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="sha2&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;php&#x9519;&#x8BEF;">SHA2&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;PHP&#x9519;&#x8BEF;</h2>
+<h3 id="&#x642C;&#x8FD0;&#x53C2;&#x8003;-httpswwwcnblogscomcndavidwangp9357684html">&#x642C;&#x8FD0;&#x53C2;&#x8003; <a href="https://www.cnblogs.com/cndavidwang/p/9357684.html" target="_blank">https://www.cnblogs.com/cndavidwang/p/9357684.html</a></h3>
+<p>1.&#x9A8C;&#x8BC1;&#x9519;&#x8BEF;&#x7684;&#x63D0;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-text">[2054] PDOException in Connection.php line 295
+SQLSTATE[HY000] [2054] The server requested authentication method unknown to the client
+                $this-&gt;fetchType = $config[&apos;result_type&apos;];
+            }
+            try {
+                if (empty($config[&apos;dsn&apos;])) {
+                    $config[&apos;dsn&apos;] = $this-&gt;parseDsn($config);
+                }
+                if ($config[&apos;debug&apos;]) {
+                    $startTime = microtime(true);
+                }
+                $this-&gt;links[$linkNum] = new PDO($config[&apos;dsn&apos;], $config[&apos;username&apos;], $config[&apos;password&apos;], $params);
+                if ($config[&apos;debug&apos;]) {
+                    // &#x8BB0;&#x5F55;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x4FE1;&#x606F;
+                    Log::record(&apos;[ DB ] CONNECT:[ UseTime:&apos; . number_format(microtime(true) - $startTime, 6) . &apos;s ] &apos; . $config[&apos;dsn&apos;], &apos;sql&apos;);
+                }
+            } catch (\PDOException $e) {
+                if ($autoConnection) {
+                    Log::record($e-&gt;getMessage(), &apos;error&apos;);
+                    return $this-&gt;connect($autoConnection, $linkNum);
+                } else {
+</code></pre>
+<blockquote>
+<p>&#x5373;:&#x670D;&#x52A1;&#x5668;&#x8BF7;&#x6C42;&#x5BA2;&#x6237;&#x7AEF;&#x672A;&#x77E5;&#x7684;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x65B9;&#x6CD5;</p>
+</blockquote>
+<h3 id="2&#x80CC;&#x666F;&#xFF1A;docker-&#x5BB9;&#x5668;-mysql&#x7684;&#x955C;&#x50CF;&#x662F;-mysql80&#x7248;&#x672C;-&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x4E86;&#x65B0;&#x7684;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;&#x63D2;&#x4EF6;&#xFF1A;cachingsha2password&#xFF0C;">2.&#x80CC;&#x666F;&#xFF1A;docker &#x5BB9;&#x5668; mysql&#x7684;&#x955C;&#x50CF;&#x662F; mysql8.0&#x7248;&#x672C; &#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x4E86;&#x65B0;&#x7684;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;&#x63D2;&#x4EF6;&#xFF1A;caching_sha2_password&#xFF0C;</h3>
+<p>&#x800C;&#x672C;&#x5730;php&#x73AF;&#x5883;&#x662F;&#x7684;mysqld &#x6269;&#x5C55;&#x7684;Loaded plugins &#x9879;&#x6CA1;&#x6709;&#x5305;&#x542B; caching_sha2_password &#x63D2;&#x4EF6;&#xFF0C;</p>
+<pre><code class="lang-text">mysqlnd
+mysqlnd    enabled
+Version    mysqlnd 5.0.12-dev - 20150407 - $Id: 38fea24f2847fa7519001be390c98ae0acafe387 $
+Compression    supported
+core SSL    supported
+extended SSL    supported
+Command buffer size    4096
+Read buffer size    32768
+Read timeout    31536000
+Collecting statistics    Yes
+Collecting memory statistics    No
+Tracing    n/a
+Loaded plugins    mysqlnd,debug_trace,auth_plugin_mysql_native_password,auth_plugin_mysql_clear_password,auth_plugin_sha256_password
+API Extensions    pdo_mysql,mysqli
+</code></pre>
+<h3 id="3&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;">3.&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</h3>
+<blockquote>
+<p>&#x5982;&#x679C;&#x4E0D;&#x80FD;&#x5347;&#x7EA7;PHP&#xFF0C;&#x53EF;&#x4EE5;&#x5728;MySQL 8&#x4E2D;&#x521B;&#x5EFA;&#xFF08;&#x6216;&#x4FEE;&#x6539;&#xFF09;&#x4F7F;&#x7528;caching_sha2_password&#x63D2;&#x4EF6;&#x7684;&#x8D26;&#x6237;&#xFF0C;&#x4F7F;&#x4E4B;&#x4F7F;&#x7528;mysql_native_password&#xFF0C;&#x8FD9;&#x6837;&#x5148;&#x524D;&#x7248;&#x672C;&#x7684;PHP&#x5C31;&gt;&#x53EF;&#x4EE5;&#x8FDE;&#x63A5;&#x4F7F;&#x7528;&#x4E86;&#x3002;</p>
+<p>&#x5728;CREATE USER&#x65F6;&#xFF0C;&#x4F7F;&#x7528;IDENTIFIED WITH xxx_plugin BY &apos;password&apos;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+</blockquote>
+<pre><code class="lang-text">CREATE USER &apos;root&apos;@&apos;localhost&apos; IDENTIFIED WITH mysql_native_password BY &apos;password&apos;;
+</code></pre>
+<blockquote>
+<p>&#x4F7F;&#x7528;ALTER USER&#x4FEE;&#x6539;&#x5DF2;&#x6709;&#x8D26;&#x6237;&#x7684;&#x9A8C;&#x8BC1;&#x63D2;&#x4EF6;&#xFF1A;</p>
+</blockquote>
+<pre><code class="lang-text">ALTER USER &apos;root&apos;@&apos;localhost&apos; IDENTIFIED WITH mysql_native_password
+</code></pre>
+<blockquote>
+<p>&#x6216;</p>
+</blockquote>
+<pre><code>ALTER USER &apos;root&apos;@&apos;localhost&apos; IDENTIFIED WITH mysql_native_password BY &apos;new_password&apos;;
+</code></pre><blockquote>
+<p>&#x91C7;&#x7528;&#x524D;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x8D26;&#x6237;&#x7684;&#x5BC6;&#x7801;&#x5C06;&#x88AB;&#x6E05;&#x9664;&#xFF1B;BY&#x5B50;&#x53E5;&#x5C06;&#x4E3A;&#x8D26;&#x6237;&#x8BBE;&#x7F6E;&#x65B0;&#x7684;&#x5BC6;&#x7801;; &apos;root&apos;  &#x5373;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x7528;&#x6237;&#xFF0C;&apos;localhost&apos;&#x5373;&#x8981;&#x9A8C;&#x8BC1;&#x7684;ip&#x5730;&#x5740;&#xFF0C;&#x82E5;&#x9700;&#x8981;&#x5F00;&#x653E;&#x6240;&#x6709;ip&#x5730;&#x5740;&#x90FD;&#x53EF;&#x4EE5;&#x8054;&#x63A5;&#xFF0C;&#x53EF;&#x66FF;&#x6362;&#x6210; &apos;%&apos;</p>
+<p>/etc/my.cnf&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x884C;&#xFF1A;</p>
+</blockquote>
+<pre><code class="lang-text"># default-authentication-plugin=mysql_native_password
+</code></pre>
+<blockquote>
+<p>&#x8BF7;&#x5220;&#x9664;&#x6CE8;&#x91CA;&#x7B26;&#x53F7;&#x201C;#&#x201D;&#x5E76;&#x91CD;&#x65B0;&#x542F;&#x52A8;mysqld&#x4F7F;&#x4E4B;&#x751F;&#x6548;&#xFF0C;&#x6B64;&#x540E;&#x521B;&#x5EFA;&#x7684;&#x8D26;&#x6237;&#x5747;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;mysql_native_password&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60A8;&#x5B8C;&#x6210;MySQL Server&#x7684;&#x5B89;&#x88C5;&#x4E4B;&#x540E;&#xFF0C;&#x5728;&#x6CA1;&#x6709;&#x542F;&#x52A8;&#x8FC7;mysqld&#x670D;&#x52A1;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4FEE;&#x6539;/etc/my.cnf&#x914D;&#x7F6E;&#xFF0C;&#x90A3;&#x4E48;&#x542F;&#x52A8;mysqld&#x4E4B;&#x540E;&#x521B;&#x5EFA;&#x7684;&apos;root&apos;@&apos;localhost&apos;&#x8D26;&#x6237;&#x4E5F;&gt;&#x662F;&#x4F7F;&#x7528;mysql_native_password&#x63D2;&#x4EF6;&#x7684;&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Mysql">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="solution_of_mysql.html" class="navigation navigation-next " aria-label="Next page: 常见的错误及解决方案">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SHA2密码验证错误","level":"1.15.1","depth":2,"next":{"title":"常见的错误及解决方案","level":"1.15.2","depth":2,"path":"mysql/solution_of_mysql.md","ref":"mysql/solution_of_mysql.md","articles":[]},"previous":{"title":"Mysql","level":"1.15","depth":1,"path":"mysql/README.md","ref":"mysql/README.md","articles":[{"title":"SHA2密码验证错误","level":"1.15.1","depth":2,"path":"mysql/mysql8_0_authentication_SHA2.md","ref":"mysql/mysql8_0_authentication_SHA2.md","articles":[]},{"title":"常见的错误及解决方案","level":"1.15.2","depth":2,"path":"mysql/solution_of_mysql.md","ref":"mysql/solution_of_mysql.md","articles":[]},{"title":"Explain  中  Extra","level":"1.15.3","depth":2,"path":"mysql/extra_of_explain_option.md","ref":"mysql/extra_of_explain_option.md","articles":[]},{"title":"Explain  中  type","level":"1.15.4","depth":2,"path":"mysql/type_of_explain_option.md","ref":"mysql/type_of_explain_option.md","articles":[]},{"title":"主从复制","level":"1.15.5","depth":2,"path":"mysql/replication _slave.md","ref":"mysql/replication _slave.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/liaoxxxx"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.png","title":"","button":"赞赏","alipayText":" "},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"Blankj","repo":"glory","type":"star","size":"small","count":true}]},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Blankj","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"liaxx 的笔记","language":"zh-hans","links":{"sidebar":{"找到我":"https://www.zhihu.com/people/liaoxxxxx/activities"}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"mysql/mysql8_0_authentication_SHA2.md","mtime":"2020-05-02T07:28:06.987Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-01T08:30:05.363Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

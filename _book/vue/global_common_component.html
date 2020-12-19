@@ -1,0 +1,1164 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>定义全局的公用的组件 · liaxx 的笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Blankj">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="exm_of_tab_menu.html" />
+    
+    
+    <link rel="prev" href="router_of_vue.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.zhihu.com/people/liaoxxxxx/activities" target="_blank" class="custom-link">找到我</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../spring_boot/">
+            
+                <a href="../spring_boot/">
+            
+                    
+                    Spring Boot
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../spring_boot/task.html">
+            
+                <a href="../spring_boot/task.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../spring_boot/dto_object.html">
+            
+                <a href="../spring_boot/dto_object.html">
+            
+                    
+                    DTO对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../spring_boot/spring_data_jpa.html">
+            
+                <a href="../spring_boot/spring_data_jpa.html">
+            
+                    
+                    JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../spring_boot/spring_data_jpa_query_annotation.html">
+            
+                <a href="../spring_boot/spring_data_jpa_query_annotation.html">
+            
+                    
+                    JPA @Query注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../spring_boot/json_web_token.html">
+            
+                <a href="../spring_boot/json_web_token.html">
+            
+                    
+                    Json Web Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../spring_boot/starter_actuator.html">
+            
+                <a href="../spring_boot/starter_actuator.html">
+            
+                    
+                    Actuator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../spring_boot/mybatis_main.html">
+            
+                <a href="../spring_boot/mybatis_main.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../spring_boot/Value_annotation_of_beans.html">
+            
+                <a href="../spring_boot/Value_annotation_of_beans.html">
+            
+                    
+                    @Value 注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../spring_boot/Maximum_upload_size_exceeded.html">
+            
+                <a href="../spring_boot/Maximum_upload_size_exceeded.html">
+            
+                    
+                    上传文件大小限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../best_practices/">
+            
+                <a href="../best_practices/">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../best_practices/request_limiter_redis.html">
+            
+                <a href="../best_practices/request_limiter_redis.html">
+            
+                    
+                    redis限流器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../swoft/">
+            
+                <a href="../swoft/">
+            
+                    
+                    Swoft
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../swoft/setup_debug.html">
+            
+                <a href="../swoft/setup_debug.html">
+            
+                    
+                    安装调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../swoft/task.html">
+            
+                <a href="../swoft/task.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../swoft/coroutine.html">
+            
+                <a href="../swoft/coroutine.html">
+            
+                    
+                    协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../swoft/aop.html">
+            
+                <a href="../swoft/aop.html">
+            
+                    
+                    AOP切面编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../php/">
+            
+                <a href="../php/">
+            
+                    
+                    php
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../php/directory_recursive_iterator.html">
+            
+                <a href="../php/directory_recursive_iterator.html">
+            
+                    
+                    官方文件遍历实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../php/solution_of_curl_timeout.html">
+            
+                <a href="../php/solution_of_curl_timeout.html">
+            
+                    
+                    处理curl 超时
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../php/stream.html">
+            
+                <a href="../php/stream.html">
+            
+                    
+                    文件操作和流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../thinkphp/">
+            
+                <a href="../thinkphp/">
+            
+                    
+                    ThinkPHP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../thinkphp/Redis_delete_ is_deprecated.html">
+            
+                <a href="../thinkphp/Redis_delete_ is_deprecated.html">
+            
+                    
+                    Redis::delete()被弃用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../thinkphp/linked_model_of_thinkphp_3.html">
+            
+                <a href="../thinkphp/linked_model_of_thinkphp_3.html">
+            
+                    
+                    模型 非 主键一对一关联
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../laravel/">
+            
+                <a href="../laravel/">
+            
+                    
+                    Laravel
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../laravel/some_solution.html">
+            
+                <a href="../laravel/some_solution.html">
+            
+                    
+                    各种日常记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../laravel/run_on_laravel-s.html">
+            
+                <a href="../laravel/run_on_laravel-s.html">
+            
+                    
+                    使用 laravel-s扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tcp_and_ip/">
+            
+                <a href="../tcp_and_ip/">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tcp_and_ip/diff_between_0_0_0_0_and_127_0_0_1.html">
+            
+                <a href="../tcp_and_ip/diff_between_0_0_0_0_and_127_0_0_1.html">
+            
+                    
+                    0.0.0.0 与 127.0.0.1的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../tcp_and_ip/http_protocol.html">
+            
+                <a href="../tcp_and_ip/http_protocol.html">
+            
+                    
+                    http协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../linux/README.md">
+            
+                <span>
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../linux/about_ssh.html">
+            
+                <a href="../linux/about_ssh.html">
+            
+                    
+                    关于ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../docker/">
+            
+                <a href="../docker/">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../docker/operatineo_of_container.html">
+            
+                <a href="../docker/operatineo_of_container.html">
+            
+                    
+                    操作容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Vue/README.md">
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="axios.html">
+            
+                <a href="axios.html">
+            
+                    
+                    Axios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="some_solution.html">
+            
+                <a href="some_solution.html">
+            
+                    
+                    各种错误的解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="vuex.html">
+            
+                <a href="vuex.html">
+            
+                    
+                    Vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="router_of_vue.html">
+            
+                <a href="router_of_vue.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.5" data-path="global_common_component.html">
+            
+                <a href="global_common_component.html">
+            
+                    
+                    定义全局的公用的组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="exm_of_tab_menu.html">
+            
+                <a href="exm_of_tab_menu.html">
+            
+                    
+                    各种组件实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../redis/">
+            
+                <a href="../redis/">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../redis/used_pipeline.html">
+            
+                <a href="../redis/used_pipeline.html">
+            
+                    
+                    管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../redis/pipline_and_trnasation.html">
+            
+                <a href="../redis/pipline_and_trnasation.html">
+            
+                    
+                    管道与事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../data_structure_and_algorithms/">
+            
+                <a href="../data_structure_and_algorithms/">
+            
+                    
+                    数据结构与算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../design_patterns/">
+            
+                <a href="../design_patterns/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../design_patterns/proxy_patterns.html">
+            
+                <a href="../design_patterns/proxy_patterns.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../design_patterns/facade_patterns.html">
+            
+                <a href="../design_patterns/facade_patterns.html">
+            
+                    
+                    门面、外观模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../mysql/">
+            
+                <a href="../mysql/">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../mysql/mysql8_0_authentication_SHA2.html">
+            
+                <a href="../mysql/mysql8_0_authentication_SHA2.html">
+            
+                    
+                    SHA2密码验证错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../mysql/solution_of_mysql.html">
+            
+                <a href="../mysql/solution_of_mysql.html">
+            
+                    
+                    常见的错误及解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../mysql/extra_of_explain_option.html">
+            
+                <a href="../mysql/extra_of_explain_option.html">
+            
+                    
+                    Explain  中  Extra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../mysql/type_of_explain_option.html">
+            
+                <a href="../mysql/type_of_explain_option.html">
+            
+                    
+                    Explain  中  type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../mysql/replication _slave.html">
+            
+                <a href="../mysql/replication _slave.html">
+            
+                    
+                    主从复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >定义全局的公用的组件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="vue-&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x7684;&#x516C;&#x7528;&#x7684;&#x7EC4;&#x4EF6;-&#x53CA;-&#x5C40;&#x90E8;&#x7EC4;&#x4EF6;">Vue &#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x7684;&#x516C;&#x7528;&#x7684;&#x7EC4;&#x4EF6; &#x53CA; &#x5C40;&#x90E8;&#x7EC4;&#x4EF6;</h3>
+<h4 id="1-&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6A21;&#x677F;-&#x5982;&#xFF1A;headervue">1. &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6A21;&#x677F; &#x5982;&#xFF1A;header.vue</h4>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- /src/components/common/header.vue  --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">mu-appbar</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 100%;&quot;</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;primary&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">mu-button</span> <span class="hljs-attr">icon</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">mu-icon</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">mu-icon</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">mu-button</span>&gt;</span>
+    Title
+    <span class="hljs-tag">&lt;<span class="hljs-name">mu-menu</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">mu-button</span> <span class="hljs-attr">flat</span>&gt;</span>MENU<span class="hljs-tag">&lt;/<span class="hljs-name">mu-button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">mu-list</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">mu-list-item</span> <span class="hljs-attr">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">mu-list-item-content</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">mu-list-item-title</span>&gt;</span>Menu Item 1<span class="hljs-tag">&lt;/<span class="hljs-name">mu-list-item-title</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">mu-list-item-content</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">mu-list-item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">mu-list-item</span> <span class="hljs-attr">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">mu-list-item-content</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">mu-list-item-title</span>&gt;</span>Menu Item 2<span class="hljs-tag">&lt;/<span class="hljs-name">mu-list-item-title</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">mu-list-item-content</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">mu-list-item</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">mu-list</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">mu-menu</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">mu-appbar</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<h4 id="2--&#x5728;mainjs&#x4E2D;&#x5F15;&#x5165;&#x6587;&#x4EF6;--&#x5E76;&#x58F0;&#x660E;&#x4E3A;&#x5168;&#x5C40;&#x4E3B;&#x4EF6;-header-view">2.  &#x5728;main.js&#x4E2D;&#x5F15;&#x5165;&#x6587;&#x4EF6;  &#x5E76;&#x58F0;&#x660E;&#x4E3A;&#x5168;&#x5C40;&#x4E3B;&#x4EF6;: header-view</h4>
+<pre><code class="lang-javascript">
+&lt;!-- <span class="hljs-regexp">/src/m</span>ain.js  --&gt;
+<span class="hljs-keyword">import</span> header <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/common/header&apos;</span>
+Vue.component(<span class="hljs-string">&apos;header-view&apos;</span>, header)
+</code></pre>
+<h4 id="3-&#x5728;&#x9700;&#x8981;&#x7684;&#x4F7F;&#x7528;&#x7684;vue&#x9875;&#x9762;&#x4E2D;&#x3000;&#x5199;&#x5165;&#x8BE5;&#x6807;&#x7B7E;&#xFF1A;-header-view">3. &#x5728;&#x9700;&#x8981;&#x7684;&#x4F7F;&#x7528;&#x7684;vue&#x9875;&#x9762;&#x4E2D;&#x3000;&#x5199;&#x5165;&#x8BE5;&#x6807;&#x7B7E;&#xFF1A; <header-view>&lt;/header-view&gt;</header-view></h4>
+<pre><code class="lang-html">
+<span class="hljs-comment">&lt;!-- /src/components/Home.vue  --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">mu-container</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;max-width: 400px; width:100%;&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">header-view</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">header-view</span>&gt;</span>  <span class="hljs-comment">&lt;!--&#x5F15;&#x5165;&#x6807;&#x7B7E; &#x5C06;&#x6E32;&#x67D3;header.vur--&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">mu-container</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<h4 id="4&#x9519;&#x8BEF;&#x5B9E;&#x4F8B;&#xFF1A;">4.&#x9519;&#x8BEF;&#x5B9E;&#x4F8B;&#xFF1A;</h4>
+<h5 id="41">4.1</h5>
+<blockquote>
+<p>Failed to mount component: template or render function not defined.</p>
+</blockquote>
+<h6 id="411&#x539F;&#x56E0;&#x6240;&#x5B9A;&#x4E49;&#x7684;--component-&#x7684;&#x9876;&#x7EA7;&#x6807;&#x7B7E;&#x4E0D;&#x662F;-">4.1.1&#x539F;&#x56E0;:&#x6240;&#x5B9A;&#x4E49;&#x7684;  component &#x7684;&#x9876;&#x7EA7;&#x6807;&#x7B7E;&#x4E0D;&#x662F; <template></template></h6>
+<pre><code class="lang-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>   <span class="hljs-comment">&lt;!-- &#x5B9A;&#x4E49;  component&#x7EC4;&#x4EF6; &#x65F6;&#xFF0C;component&#x9876;&#x7EA7;&#x6807;&#x7B7E;&#x5FC5;&#x987B;&#x662F;  &lt;template&gt;&lt;/template&gt; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;header-row-fixed&quot;</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<hr>
+<h3 id="&#x5C40;&#x90E8;&#x7EC4;&#x4EF6;">&#x5C40;&#x90E8;&#x7EC4;&#x4EF6;</h3>
+<h4 id="1&#x5B9A;&#x4E49;&#x5B50;&#x7EC4;&#x4EF6;&#x6A21;&#x677F;&#xFF1A;">1.&#x5B9A;&#x4E49;&#x5B50;&#x7EC4;&#x4EF6;&#x6A21;&#x677F;&#xFF1A;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">el-dialog</span> <span class="hljs-attr">v-el-drag-dialog</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;&#x6DFB;&#x52A0;&#x7BA1;&#x7406;&#x5458;&quot;</span> <span class="hljs-attr">:visible.sync</span>=<span class="hljs-string">&quot;addAdminDialogVisible&quot;</span> <span class="hljs-attr">:fullscreen</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;add-admin-dialog&quot;</span> <span class="hljs-attr">center</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">el-row</span> <span class="hljs-attr">:gutter</span>=<span class="hljs-string">&quot;24&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">el-form</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;form&quot;</span> <span class="hljs-attr">label-width</span>=<span class="hljs-string">&quot;80px&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">el-form-item</span> <span class="hljs-attr">label</span>=<span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">el-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;adminobj.username&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x7BA1;&#x7406;&#x5458;&#x7528;&#x6237;&#x540D;&quot;</span> /&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">el-form-item</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">el-form</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">el-row</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">el-dialog</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  name: <span class="hljs-string">&apos;AddAdmin&apos;</span>,
+  props: [<span class="hljs-string">&apos;adminobj&apos;</span>, <span class="hljs-string">&apos;addAdminDialogVisible&apos;</span>],
+  data() {
+    <span class="hljs-keyword">return</span> {
+    }
+  },
+  methods: {
+    addAdmin() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-number">888</span>)
+    }
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;scss&quot;</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="undefined">
+
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<h4 id="11-&#x8981;&#x70B9;">1.1 &#x8981;&#x70B9;</h4>
+<blockquote>
+<p> template &#x5355;&#x5165;&#x53E3;  <code>&lt;template&gt;&lt;div&gt; div &#x5143;&#x7D20;&#x4E3A;&#x5165;&#x53E3;  &lt;/div&gt;&lt;/template&gt;</code>  ;</p>
+<p> &#x5B9A;&#x4E49;&#x53C2;&#x6570; name   <code>name: &apos;AddAdmin&apos;</code>,</p>
+<p> &#x5916;&#x90E8;&#x4F20;&#x5165;&#x7684; props  <code>props: [&apos;adminobj&apos;, &apos;addAdminDialogVisible&apos;]</code> string &#x7C7B;&#x578B;,</p>
+</blockquote>
+<h3 id="2-&#x7236;&#x7EC4;&#x4EF6;-&#x5F15;&#x7528;">2 &#x7236;&#x7EC4;&#x4EF6; &#x5F15;&#x7528;</h3>
+<pre><code class="lang-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;add-container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">AddAdmin</span> 
+    <span class="hljs-attr">:add-admin-dialog-visible</span>=<span class="hljs-string">&quot;addAdminDialogVisible&quot;</span> 
+    <span class="hljs-attr">:adminobj</span>=<span class="hljs-string">&quot;adminObj&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">AddAdmin</span>&gt;</span>                         <span class="hljs-comment">&lt;!--3.  &#x63D2;&#x5165;&#x5230;&#x7236;&#x7EC4;&#x4EF6;&#xFF0C;&#x4F20;&#x9012;&#x7ED1;&#x5B9A; &#x5FC5;&#x8981;&#x7684;&#x53C2;&#x6570;      --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> AddAdmin <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./add.vue&apos;</span>        <span class="hljs-comment">/* 1. &#x5F15;&#x5165;&#x5B50;&#x7EC4;&#x4EF6;*/</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  name: <span class="hljs-string">&apos;AdminList&apos;</span>,
+  components: {
+    <span class="hljs-string">&apos;AddAdmin&apos;</span>: AddAdmin                <span class="hljs-comment">/* 2. &#x6302;&#x8F7D; &#x547D;&#x540D;  &#x5230; components */</span>
+  },
+  data() {
+    <span class="hljs-keyword">return</span> {
+      addAdminDialogVisible: <span class="hljs-literal">false</span>,     <span class="hljs-comment">/*&#x5B50;&#x7EC4;&#x4EF6; &#x5FC5;&#x8981;&#x7684;&#x53C2;&#x6570;*/</span>
+      adminObj: {                       <span class="hljs-comment">/*&#x5B50;&#x7EC4;&#x4EF6; &#x5FC5;&#x8981;&#x7684;&#x53C2;&#x6570;*/</span>
+        username: <span class="hljs-string">&apos;&apos;</span>,
+        password: <span class="hljs-string">&apos;&apos;</span>,
+        status: <span class="hljs-literal">true</span>,
+        nickname: <span class="hljs-string">&apos;&apos;</span>,
+        isAdministrator: <span class="hljs-literal">true</span>
+      }
+    }
+  },
+  methods: {
+
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.block-page-row</span>{
+    <span class="hljs-attribute">position</span>: fixed;
+    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<h4 id="2&#x9519;&#x8BEF;&#x5B9E;&#x4F8B;">2.&#x9519;&#x8BEF;&#x5B9E;&#x4F8B;</h4>
+<h5 id="21--&#x5B50;&#x7EC4;&#x4EF6;&#x672A;&#x547D;&#x540D;--&#x5373;&#x5B50;&#x7EC4;&#x4EF6;--name&#xFF1A;-&#x4E3A;&#x7A7A;">2.1  &#x5B50;&#x7EC4;&#x4EF6;&#x672A;&#x547D;&#x540D;  &#x5373;&#x5B50;&#x7EC4;&#x4EF6;  <code>name</code>&#xFF1A; &#x4E3A;&#x7A7A;</h5>
+<p><code>
+</code></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="router_of_vue.html" class="navigation navigation-prev " aria-label="Previous page: 路由">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="exm_of_tab_menu.html" class="navigation navigation-next " aria-label="Next page: 各种组件实例">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"定义全局的公用的组件","level":"1.11.5","depth":2,"next":{"title":"各种组件实例","level":"1.11.6","depth":2,"path":"vue/exm_of_tab_menu.md","ref":"vue/exm_of_tab_menu.md","articles":[]},"previous":{"title":"路由","level":"1.11.4","depth":2,"path":"vue/router_of_vue.md","ref":"vue/router_of_vue.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/liaoxxxx"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.png","title":"","button":"赞赏","alipayText":" "},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"Blankj","repo":"glory","type":"star","size":"small","count":true}]},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Blankj","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"liaxx 的笔记","language":"zh-hans","links":{"sidebar":{"找到我":"https://www.zhihu.com/people/liaoxxxxx/activities"}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"vue/global_common_component.md","mtime":"2020-04-15T18:39:36.757Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-01T08:30:05.363Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
