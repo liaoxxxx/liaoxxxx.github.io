@@ -18,8 +18,10 @@
     * [定时任务](swoft/task.md)
     * [协程](swoft/coroutine.md)
     * [AOP切面编程](swoft/aop.md)
+* [gin](gin/README.md)
+	* [跨域](gin/cross_origin.md)    
 * [php](php/README.md)
-	* [官方文件遍历实现](php/directory_recursive_iterator.md)	
+	* [官方 文件遍历实现](php/directory_recursive_iterator.md)	
 	* [处理curl 超时](php/solution_of_curl_timeout.md)
 	* [文件操作和流](php/stream.md)
 * [ThinkPHP](thinkphp/README.md)
@@ -55,4 +57,5 @@
 	* [Explain  中  Extra](mysql/extra_of_explain_option.md)
 	* [Explain  中  type](mysql/type_of_explain_option.md)
 	* [主从复制](mysql/replication _slave.md)
+	* [DNS反解析错误](mysql/IP_address_couldnot_be_resolved.md)
 	

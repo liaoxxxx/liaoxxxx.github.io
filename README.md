@@ -10,7 +10,7 @@
 
 >* 广西理工职业技术学院  数控技术
 
->* https://github.com/liaoxxxx   Blog：http://111.229.128.239:4000/	
+>* https://github.com/liaoxxxx   
 
 ### 个人技能
 

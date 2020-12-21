@@ -19,69 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b9aea22-1a08-42a4-b4f8-6ebd343cbc66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/liaoxxxx.github.io.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/11828.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/liaoxxxx.github.com.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="1b9aea22-1a08-42a4-b4f8-6ebd343cbc66" name="Default Changelist" comment="1.更新简历页面">
+      <change afterPath="$PROJECT_DIR$/gin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gin/cross_origin.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/IP_address_couldnot_be_resolved.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_vue_js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_mysql.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_php.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_tp5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_uwp.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_wxMiniProgram.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/all_mysql_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/all_php_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/vue_js.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/TP5/DbTransaction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/TP5/modelOfDatabase.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/TP5/perfect_options_of_tp5.1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/TP5/rename_field.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/about_vue_js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/Dom_of_js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/getJsonObject.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/someOfLyaerJs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/uploadFiles.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/window.location.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/modelOfDatabase.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/operations_of_mysql.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/php_html/AjaxExamaple.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/php_html/CURL.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/php_html/StdClass.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/php_html/connect_mysql_2way.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/php_html/dangers_of_php.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/php_html/header()_of_php.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/php_html/install_extension.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/php_html/upload&amp;download.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/sql/count()&amp;groupBy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/wxMIniProgram/option_of_toolBar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/php_log.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/vuejs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jQuery v3.3.1min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/mobile/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/mobile/need/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/theme/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/theme/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/theme/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/theme/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/theme/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/theme/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/vue/trans_data_by_prop_of_component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_boot/json_web_token.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring_boot/json_web_token.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +50,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gin" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\coding\liaoxxstudio\liaoxxxx.github.io\gin" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -116,8 +69,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608386443883</updated>
-      <workItem from="1608386448544" duration="1764000" />
+      <workItem from="1608386448544" duration="4483000" />
+      <workItem from="1608572630359" duration="1574000" />
     </task>
+    <task id="LOCAL-00001" summary="1.切换到gitbook">
+      <created>1608388363071</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608388363071</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.更新简历页面">
+      <created>1608388781614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608388781614</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,12 +102,26 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.切换到gitbook" />
+    <MESSAGE value="1.更新简历页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.更新简历页面" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="198" key="#Deployment" timestamp="1608574205158">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="198" key="#Deployment/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1608574205158" />
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1608387737225">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1608387737225" />
+    <state x="595" y="300" key="MultipleFileMergeDialog" timestamp="1608388462518">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="595" y="300" key="MultipleFileMergeDialog/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1608388462518" />
     <state x="461" y="184" key="SettingsEditor" timestamp="1608387967964">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -147,5 +130,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="498" height="398" key="SwitcherDM/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1608388062038" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1608388788639">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1608388788639" />
+    <state x="792" y="270" key="ftp.server.browser" timestamp="1608574199973">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="792" y="270" key="ftp.server.browser/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1608574199973" />
   </component>
 </project>
