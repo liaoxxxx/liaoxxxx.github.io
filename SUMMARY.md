@@ -47,6 +47,8 @@
 * [Redis](redis/README.md)
     * [管道](redis/used_pipeline.md)
     * [管道与事务](redis/pipline_and_trnasation.md)
+* [kafka](kafka/README.md)
+  * [安装](kafka/install_kafka.md)
 * [数据结构与算法](data_structure_and_algorithms/README.md)
 * [设计模式](design_patterns/README.md)
     * [代理模式](design_patterns/proxy_patterns.md)

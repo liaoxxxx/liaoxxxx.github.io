@@ -25,7 +25,7 @@ $ php artisan serve --host=0.0.0.0 --port=8080
 
 > 如  url :   127.0.0.1:8000/admin/member/0?page=1&type=1  ，则参数  `s` = `/admin/member/0`  即 参数 `s`  =  uri.
 
-> nginx.config  该 server{ } rewrite 语句块中:
+> nginx.config  改 server{ } rewrite 语句块中:
 
 ```` config
 location / {
@@ -60,9 +60,9 @@ location / {
 
 ```json
  "require": {
-        "fideloper/proxy": "^4.0",             
-        "laravel/framework": "5.8.*"
-    }
+     "fideloper/proxy": "^4.0",             
+     "laravel/framework": "5.8.*"
+}
 
 ```
 
