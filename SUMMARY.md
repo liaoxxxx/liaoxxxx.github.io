@@ -61,4 +61,5 @@
 	* [Explain  中  type](mysql/type_of_explain_option.md)
 	* [主从复制](mysql/replication _slave.md)
 	* [DNS反解析错误](mysql/IP_address_couldnot_be_resolved.md)
+    * [distance计算语句错误（long 关键字）](mysql/distance_calc_sentence_wrong_with_long_keyword.md)
 	
