@@ -15,7 +15,7 @@ message PersonMessage{
 }
 ```
 
-###2. 编译生成
+###2. golang 编译生成
 
 2.1 命令 `protoc --proto_path src/ --go_out=src/ ./src/first/person.proto`
 
@@ -48,3 +48,14 @@ Please specify either:
  ```
 
 >* 3.1.3   `"./;pb";`     释义 `"./;你的包名";`  即 `pb` 为需要生成代码文件指定的包名
+
+
+
+### 4. dart 编译生成
+
+#### 4.1  安装 `pub global activate protoc_plugin`
+
+####4.2 命令 `protoc --proto_path src/ --go_out=src/ ./src/first/person.proto`
+
+
+
