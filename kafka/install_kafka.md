@@ -35,3 +35,7 @@ bin/kafka-server-start.sh config/server.properties 1>/dev/null  2>&1  &
 
 
 ####4.监控面板 
+
+<br>
+
+### 弃坑

@@ -1,7 +1,7 @@
 ##| 跨域
 
 ### 1.实现中间件
-```
+```go
 package middleware
 
 import (
@@ -40,7 +40,7 @@ func Cors() gin.HandlerFunc {
 
 ### 2.调用中间件
 
-```
+```go
 package router
 
 import (
