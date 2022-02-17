@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,9 +22,62 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b9aea22-1a08-42a4-b4f8-6ebd343cbc66" name="Default Changelist" comment="1.更新简历页面">
+    <list default="true" id="1b9aea22-1a08-42a4-b4f8-6ebd343cbc66" name="Default Changelist" comment="1. 更新简历">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/best_practices/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/best_practices/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/best_practices/request_limiter_redis.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/best_practices/request_limiter_redis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/data_structure_and_algorithms/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/data_structure_and_algorithms/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design_patterns/facade_patterns.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design_patterns/facade_patterns.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design_patterns/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design_patterns/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design_patterns/proxy_patterns.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design_patterns/proxy_patterns.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/docker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/docker/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/docker/operatineo_of_container.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/docker/operatineo_of_container.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/laravel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/laravel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/laravel/run_on_laravel-s.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/laravel/run_on_laravel-s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/laravel/some_solution.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/laravel/some_solution.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/linux/about_ssh.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/linux/about_ssh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/mysql/extra_of_explain_option.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/mysql/extra_of_explain_option.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/mysql/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/mysql/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/mysql/mysql8_0_authentication_SHA2.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/mysql/mysql8_0_authentication_SHA2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/mysql/solution_of_mysql.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/mysql/solution_of_mysql.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/mysql/type_of_explain_option.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/mysql/type_of_explain_option.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/php/directory_recursive_iterator.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/php/directory_recursive_iterator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/php/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/php/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/php/solution_of_curl_timeout.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/php/solution_of_curl_timeout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/php/stream.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/php/stream.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/redis/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/redis/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/redis/pipline_and_trnasation.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/redis/pipline_and_trnasation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/redis/used_pipeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/redis/used_pipeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/_book/search_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/spring_boot/Maximum_upload_size_exceeded.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/spring_boot/Maximum_upload_size_exceeded.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/spring_boot/Value_annotation_of_beans.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/spring_boot/Value_annotation_of_beans.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/spring_boot/dto_object.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/spring_boot/dto_object.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/spring_boot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/spring_boot/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/spring_boot/json_web_token.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/spring_boot/json_web_token.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/spring_boot/mybatis_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/spring_boot/mybatis_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/spring_boot/spring_data_jpa.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/spring_boot/spring_data_jpa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/spring_boot/spring_data_jpa_query_annotation.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/spring_boot/spring_data_jpa_query_annotation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/spring_boot/starter_actuator.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/spring_boot/starter_actuator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/spring_boot/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/spring_boot/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/swoft/aop.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/swoft/aop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/swoft/coroutine.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/swoft/coroutine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/swoft/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/swoft/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/swoft/setup_debug.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/swoft/setup_debug.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/swoft/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/swoft/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/tcp_and_ip/diff_between_0_0_0_0_and_127_0_0_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/tcp_and_ip/diff_between_0_0_0_0_and_127_0_0_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/tcp_and_ip/http_protocol.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/tcp_and_ip/http_protocol.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/tcp_and_ip/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/tcp_and_ip/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/thinkphp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/thinkphp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/thinkphp/linked_model_of_thinkphp_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/thinkphp/linked_model_of_thinkphp_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/vue/axios.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/vue/axios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/vue/exm_of_tab_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/vue/exm_of_tab_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/vue/global_common_component.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/vue/global_common_component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/vue/router_of_vue.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/vue/router_of_vue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/vue/some_solution.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/vue/some_solution.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/vue/vuex.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/vue/vuex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/book.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +87,7 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="GOROOT" url="file://C:/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -40,11 +97,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DELOMBOK_PRE_COMMIT" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/kafka" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/linux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,13 +116,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\coding\liaoxx\liaoxxxx.github.io\kafka" />
-      <recent name="D:\coding\liaoxxstudio\liaoxxxx.github.io\gin" />
+      <recent name="D:\coding\liaoxxstudio\liaoxxxx.github.io\linux" />
+      <recent name="D:\coding\liaoxxstudio\liaoxxxx.github.io\go" />
+      <recent name="D:\coding\liaoxxstudio\liaoxxxx.github.io\grpc" />
+      <recent name="D:\coding\liaoxxstudio\liaoxxxx.github.io\mysql" />
+      <recent name="D:\coding\liaoxxstudio\liaoxxxx.github.io\php" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -77,6 +148,19 @@
       <workItem from="1613716058690" duration="3213000" />
       <workItem from="1613813620097" duration="1704000" />
       <workItem from="1614158458813" duration="2491000" />
+      <workItem from="1616092727294" duration="1482000" />
+      <workItem from="1616113160916" duration="97000" />
+      <workItem from="1616179655652" duration="1461000" />
+      <workItem from="1616425141069" duration="15000" />
+      <workItem from="1618167796723" duration="1696000" />
+      <workItem from="1618669075156" duration="319000" />
+      <workItem from="1618670809136" duration="5000" />
+      <workItem from="1618671135423" duration="1782000" />
+      <workItem from="1620397217819" duration="616000" />
+      <workItem from="1620399782031" duration="674000" />
+      <workItem from="1620406247085" duration="68000" />
+      <workItem from="1620870522088" duration="654000" />
+      <workItem from="1645110294346" duration="3784000" />
     </task>
     <task id="LOCAL-00001" summary="1.切换到gitbook">
       <created>1608388363071</created>
@@ -106,7 +190,42 @@
       <option name="project" value="LOCAL" />
       <updated>1613815089513</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1">
+      <created>1615239070906</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615239070906</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1.  记录   mysql计算坐标距离  long 字段冲突">
+      <created>1616093759940</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616093759940</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1.mysql 条目整理">
+      <created>1618167844201</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1618167844201</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1.  grpc">
+      <created>1618169492273</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618169492273</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1. 更新简历">
+      <created>1645115331091</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1645115331091</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +248,12 @@
     <MESSAGE value="1.更新简历页面" />
     <MESSAGE value="kafka 安装的doc" />
     <MESSAGE value="kafka" />
-    <option name="LAST_COMMIT_MESSAGE" value="kafka" />
+    <MESSAGE value="1" />
+    <MESSAGE value="1.  记录   mysql计算坐标距离  long 字段冲突" />
+    <MESSAGE value="1.mysql 条目整理" />
+    <MESSAGE value="1.  grpc" />
+    <MESSAGE value="1.  go/websocket" />
+    <MESSAGE value="1. 更新简历" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 更新简历" />
   </component>
 </project>

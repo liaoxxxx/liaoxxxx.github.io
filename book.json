@@ -1,6 +1,6 @@
 {
     "title": "liaxx 的笔记",
-    "author": "Blankj",
+    "author": "liaxx",
     "description": "select * from learn",
     "language": "zh-hans",
     "gitbook": "3.2.3",
@@ -21,7 +21,7 @@
         },
         "github-buttons": {
             "buttons": [{
-                "user": "Blankj",
+                "user": "liaxx",
                 "repo": "glory",
                 "type": "star",
                 "size": "small",
@@ -45,7 +45,7 @@
             "linkedin": false,
             "messenger": false,
             "pocket": false,
-            "qq": false,
+            "qq": true,
             "qzone": false,
             "stumbleupon": false,
             "twitter": false,
