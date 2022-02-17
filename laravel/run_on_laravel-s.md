@@ -13,7 +13,7 @@
 > 5. `Mysql 8.0.17 docker`
 
 
-####2. 注册 laravel-s扩展
+#### 2. 注册 laravel-s扩展
 
 
 > 注册到服务  `/config/app.php`, 
